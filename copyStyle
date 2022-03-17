@@ -1,0 +1,8 @@
+#! /bin/bash
+
+wget https://cdn.journals.aps.org/test/0e380411-3c3b-492a-8e56-2101d1d4822f/revtex-tds-2020-10-22.zip
+unzip revtex-tds-2020-10-22.zip
+cp -p revtex-tds/tex/latex/revtex/* .
+cp -p revtex-tds/bibtex/bst/revtex/* .
+rm revtex-tds-2020-10-22.zip
+rm -rf revtex-tds
