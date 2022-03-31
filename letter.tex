@@ -72,10 +72,14 @@
 \newcommand{\MeV}{\ensuremath{\,\text{Me\hspace{-.08em}V}}}
 \newcommand{\GeV}{\ensuremath{\,\text{Ge\hspace{-.08em}V}}}
 \newcommand{\GeVinv}{\ensuremath{\,\text{Ge\hspace{-.08em}V}^{-1}}}
-\newcommand{\flo}{\ensuremath{4.707504}}
-\newcommand{\fhi}{\ensuremath{4.798147}}
-\newcommand{\mlo}{\ensuremath{19.47}}
-\newcommand{\mhi}{\ensuremath{19.84}}
+%\newcommand{\flo}{\ensuremath{4.707504}}
+%\newcommand{\fhi}{\ensuremath{4.798147}}
+%\newcommand{\mlo}{\ensuremath{19.47}}
+%\newcommand{\mhi}{\ensuremath{19.84}}
+\newcommand{\flo}{\ensuremath{4.70750}}
+\newcommand{\fhi}{\ensuremath{4.79815}}
+\newcommand{\mlo}{\ensuremath{19.4687}}
+\newcommand{\mhi}{\ensuremath{19.8436}}
 \newcommand{\avelimit}{\ensuremath{7.8\times 10^{-14}}}
 \newcommand{\lolimit}{\ensuremath{5.0\times 10^{-14}}}
 \newcommand{\hilimit}{\ensuremath{8.4\times 10^{-14}}}
@@ -279,44 +283,28 @@ a strong magnetic field, a large cavity volume, an efficient cavity
 resonant mode, a receiver with low system noise temperature, and a 
 long integration time. 
 
-The system noise temperature \tsys\ has three major components: 
-\begin{equation}
-  \tsys = T_\text{b} + T_\text{qn}  + \ta.
-\label{eq:pn}
-\end{equation}
-%   
- The three terms in Eq.~\eqref{eq:pn} correspond to the effective 
-temperatures of the following noise sources: (i) $T_\text{b}$, the blackbody 
-radiation from the cavity at a physical temperature $T_\mathrm{c}$, (ii) 
-$T_\text{qn} = \frac{1}{2}\left. hf\middle/k_B\right.$, the quantum noise 
-associated with the zero-point fluctuation of the vacuum, and (iii) \ta, the 
-noise added by the receiver (mainly from the first-stage amplifier). 
-Apart from the flat baseline as described by 
-Eq.~\eqref{eq:pn}, the noise spectrum observed by TASEH has an additional 
-component with a Lorentzian shape due to the higher temperature at the 
-cavity with respect to that in the dilution refrigerator. 
-More details may be found in the Appendix of Ref.~\cite{TASEHAnalysis}.  
-The Lorentzian component will be removed from the measured spectrum and only 
-the baseline \tsys\ will be used in the final analysis. 
+The system noise temperature \tsys\ has two major components:
+\(\tsys = T_\text{cn}  + \ta\) that correspond to the effective
+temperatures of the following noise sources: (i)
+$T_\text{cn}=\left(\frac{1}{e^{\left.hf\middle/k_BT_\mathrm{c}\right.}-1} 
++ \frac{1}{2}\right)\left. hf\middle/k_B\right.$, the blackbody
+radiation from the cavity at a physical temperature $T_\mathrm{c}$ and
+the quantum noise associated with the zero-point fluctuation of the
+vacuum, which are further modulated by a Lorentzian function due to the
+higher temperature at the cavity with respect to that in the
+dilution refrigerator.
+More details may be found in Ref.~\cite{TASEHAnalysis}. (ii) \ta, the
+noise added by the receiver (mainly from the first-stage amplifier).
+The Lorentzian modulation of $T_\text{cn}$ will be removed from
+the averaged noise spectrum and only the average value of $T_\text{cn}$ 
+will be used in the final analysis.
 %
 Using the operation parameters of TASEH and 
 the results from the calibration of readout electronics, 
 %the values of $T_\text{b}$, $T_\text{qn}$, and \ta\ are estimated to be about 
 %0.07~K, 0.12~K, and \noise~K, respectively.  
 %Therefore, 
-the baseline value of \tsys\ for TASEH is about 2.1--2.4~K. 
-
-
-
-
-
-
-
-
-
-
-
-
+the value of \tsys\ for TASEH is about 2.0--2.3~K. 
 
 %% Experimental Setup 
 The detector of TASEH is located at the Department of Physics, National 
@@ -345,11 +333,10 @@ frequency of the TM$_{010}$ mode can be tuned over the range of
 4.667--4.959~GHz via the rotation of an off-axis OFHC copper tuning rod, from 
 the position closer to the cavity wall to the position closer to the cavity 
 center. The form factor $C$ for 
-the TM$_{010}$ mode varies from 0.64 to 0.69 over the 
-full frequency range.  
+the TM$_{010}$ mode varies from 0.64 to 0.69 over the frequency range of 
+the CD102 run.  
 The intrinsic, unloaded quality factor $Q_0$ at the cryogenic temperature 
-($T_\mathrm{c}\simeq 155$~mK) is $\simeq 60000$ at the frequency of 
-4.74~GHz.
+($T_\mathrm{c}\simeq 155$~mK) is $\simeq 60000$.
 
 
 An output probe, made of a 50-$\Omega$ semi-rigid coaxial cable that was 
@@ -367,9 +354,9 @@ and demodulated to in-phase (I) and quadrature (Q) components and digitized
 by an analog-to-digital converter with a sampling rate of 2~MHz. 
 
 The CD102 data cover the frequency range of \flo--\fhi~GHz. In this Letter, 
-all the frequencies in unit of GHz are quoted with six decimal places as the 
-relative accuracy of frequency is 1~kHz. It shall be noted that the 
-absolute accuracy of frequency is $\approx 10$~kHz.  
+all the frequencies in unit of GHz are quoted with five decimal places as the 
+absolute accuracy of frequency is $\approx 10$~kHz. It shall be noted that the 
+frequency resolution is 1~kHz.  
 There were 837 resonant-frequency steps in total, with a frequency difference 
 of $\Delta f_\text{s}=95-115$~kHz between the steps. The value of 
 $\Delta f_\text{s}$ was kept within 10\% of 105~kHz rather than 
@@ -453,7 +440,7 @@ In total, 22 candidates with an SNR greater than 3.355 were found.
 Among them, 17 candidates were from the fluctuations because they were gone 
 after a few rescans. 
 The remaining five candidates, in the frequency ranges of 
-4.710170 -- 4.710190~GHz and 4.747301 -- 4.747380~GHz, reached an SNR 
+4.71017 -- 4.71019~GHz and 4.74730 -- 4.74738~GHz, reached an SNR 
 greater or equal to 5 after rescanning. The signals in the second frequency 
 range were detected via a portable antenna outside the DR and found 
 to come from the instruments in the laboratory, while the signals 
