@@ -147,9 +147,9 @@ observed cold DM density~\cite{QCDCalI,QCDCalII,QCDCalIII,QCDCalIV,QCDCalV,QCDCa
 %magnitude. 
 %
 
-Axions could be detected and studied via their two-photon interaction, the
-so-called ``inverse Primakoff effect'', of which the strength 
-is described by the coupling constant \bgagg. 
+Axions could be detected and studied via their two-photon interaction, 
+%the so-called ``inverse Primakoff effect'', 
+of which the strength is described by the coupling constant \bgagg. 
 The detectors with the best sensitivities to axions with a mass of 
 $\ma\approx \muevcc$, as first proposed by 
 Sikivie~\cite{SikivieI,SikivieII},  
@@ -192,7 +192,7 @@ and mixing flanges, among which the mixing flange could reach the lowest
 temperature at $T_{\rm mx}\simeq27$~mK. 
 %
 During the data taking, the cavity sat in the center of the magnet bore 
-and was connected via holders to the mixing flange of the DR. %at a 
+and was connected via holders to the mixing flange. %at a 
 %temperature of $T_{\rm mx}\simeq27$~mK. 
 %The temperature of the cavity stayed at $T_\text{c}\simeq155$~mK, higher 
 %with respect to the mixing flange; it is believed that the cavity had an 
@@ -201,8 +201,8 @@ The $0.234$-L cavity,
 made of oxygen-free high-conductivity (OFHC) copper, 
  is a two-cell cylinder split along 
 the axial direction, with an inner radius of 2.5~cm and a 
-height of 12~cm. In order to maintain a smooth surface, the cavity underwent 
-the processes of annealing, polishing, and chemical cleaning. 
+height of 12~cm. %In order to maintain a smooth surface, the cavity underwent 
+%the processes of annealing, polishing, and chemical cleaning. 
 The resonant frequency can be tuned via the rotation of an off-axis OFHC 
 copper tuning rod. 
 %
@@ -215,9 +215,9 @@ characteristics and for testing the signal receivers.
 The signal from the readout probe was directed to an 
 impedance-matched amplification chain. The first-stage amplifier was 
 a low noise high-electron-mobility transistor (HEMT) amplifier 
-mounted on the 4K flange. A three-stage circulator was anchored at 
-the mixing flange to prevent thermal radiation from the HEMT 
-amplifier back streaming to the cold cavity and then being reflected. 
+mounted on the 4K flange. %A three-stage circulator was anchored at 
+%the mixing flange to prevent thermal radiation from the HEMT 
+%amplifier back streaming to the cold cavity and then being reflected. 
 The signal was further amplified at room temperature via a 
 three-stage post-amplifier, and down-converted 
 and demodulated to in-phase (I) and quadrature (Q) components and digitized 
@@ -237,13 +237,18 @@ in Ref.~\cite{TASEHInstrumentation}.
   \includegraphics[width=8.6cm]{figures/Simplified_wiring_V2.png}
   \caption{%The schematic diagram of the TASEH microwave system. 
    The simplified diagram for the TASEH apparatus.
-   The dashed line separates the components at room temperature 
- and at cryogenic temperatures. The output transmission line 
- (thick line) includes a switch, a circulator, an HEMT 
- amplifier, and room-temperature amplifiers.  
- Via the cryogenic switch, the output line can also be connected                                                                                             
+%   The dashed line separates the components at room temperature 
+% and at cryogenic temperatures. 
+%  The output transmission line 
+% (thick line) includes a switch, a circulator, an HEMT 
+% amplifier, and room-temperature amplifiers.  
+ Via the cryogenic switch, the output transmission 
+ line (thick line) can also be connected 
  to a blackbody radiation source, made of a 50-$\Omega$ terminator, 
  for calibration of the amplification chain. 
+ The three-stage circulator, anchored at the mixing flange, 
+ prevents thermal radiation from the HEMT                   
+ amplifier back streaming to the cold cavity and then being reflected.  
  The two input lines, used to inject MW signals, have one attenuator 
  thermally anchored at each cold flange to reduce the broadband 
  radiation from the higher-temperature environment or flanges.    
@@ -314,7 +319,7 @@ the averaged noise power spectrum $\sigma_n$.
 According to Dicke's Radiometer Equation~\cite{Dicke}, the $\sigma_n$ 
 is given by: 
 \begin{equation}
- \sigma_n  =  k_B\tsys\sqrt{\frac{\Delta f}{t}} 
+ \sigma_n  =  k_B\tsys\sqrt{\frac{\Delta f}{t}}, 
  \label{eq:sigman}
 \end{equation}
 where \tsys\ is the system noise temperature, an effective 
@@ -343,7 +348,7 @@ The last term \ta\ is the effective temperature of the
 noise added by the receiver (mainly from the first-stage amplifier).
 The sum of the first two terms is equivalent 
 to the sum of the reflection of the incoming noise from
-the attenuator anchored to the mixing flange  
+the attenuator anchored to the mixing flange (Fig.~\ref{fig:TASEH}) 
 and the transmission of the noise from the cavity body itself.
 The
 $\Tilde{T}_i=\left(\frac{1}{e^{\left.\hbar\omega\middle/k_BT_i\right.}-1} + \frac{1}{2}\right)\left. \hbar\omega\middle/k_B\right.$ refers to
@@ -366,9 +371,16 @@ Ref.~\cite{TASEHAnalysis}.
 %the values of $T_\text{b}$, $T_\text{qn}$, and \ta\ are estimated to be about 
 %0.07~K, 0.12~K, and \noise~K, respectively.  
 %Therefore, 
-The \ta\ obtained from the calibration via the blackbody radiation source 
-in Fig.~\ref{fig:TASEH} is about \noise~K and  
-the baseline value of \tsys\ is about 2.0--2.3~K. 
+
+The calibration for the amplification chain was performed by 
+connecting the HEMT to a blackbody radiation source (Fig.~\ref{fig:TASEH}) 
+instead of the cavity via a cryogenic switch; 
+various values of input currents were sent to the 
+source to change its temperature monitored by a thermometer. 
+The output power is fitted to a first-order polynomial, as a function of
+the source temperature, to extract the gain and added noise \ta\ for the
+amplification chain. The \ta\ obtained from the calibration is 
+about \noise~K. Therefore, the baseline value of \tsys\ is about 2.0--2.3~K. 
 
 
 The data for the analysis presented here were collected by TASEH 
@@ -385,34 +397,27 @@ unexpected thermal contact with the radiation shield in the DR.
 The form factor $C$ for 
 the TM$_{010}$ mode varies from 0.60 to 0.61 over the operational 
 frequency range. 
-The $Q_0$ at the cryogenic temperature 
-($T_\mathrm{c}\simeq 155$~mK) is $\simeq 60700$. 
-There were 837 resonant-frequency steps in total, with a frequency difference 
-of $\Delta f_\text{s}=95-115$~kHz between the steps. The value of 
-$\Delta f_\text{s}$ was kept within 10\% of 105~kHz rather than 
-a fixed value, such that the rotation angle of the tuning rod did not need to 
-be fine-tuned and the operation time could be minimized; a 10\% variation of 
-the $\Delta f_\text{s}$ is found to have no impact on the \gagg\ limits. 
-Each resonant-frequency step is denoted as a ``scan'' 
-and the data integration time was about 32-42 minutes. The integration 
-time was determined based on the target \gagg\ limits and the experimental 
-parameters; the variation of the integration 
-time aimed to remove the frequency-dependence in the \gagg\ limits caused by   
-frequency dependence of the added noise \ta. 
+The $Q_0$ at the cryogenic temperature is $\simeq 60700$. 
 The depth of the readout probe was set for 
 $\beta\simeq2$ since this value maximizes the scan rate, namely the coverage 
-of frequency scans for a given amount of time. 
+of frequency scans for a given amount of time. Therefore, 
+the cavity line width, $\left.\omega_c\middle/2\pi Q_L\right.$, is about 
+240~kHz. 
+There were 837 resonant-frequency steps in total, with a frequency difference 
+of $\Delta f_\text{s}=95-115$~kHz between the steps. The value of 
+$\Delta f_\text{s}$ was kept within 10\% of 105~kHz ($\lesssim$ half of the 
+cavity line width) rather than 
+a fixed value, such that the rotation angle of the tuning rod did not need to 
+be fine-tuned and the operation time could be minimized; a 10\% variation of 
+the $\Delta f_\text{s}$ is found to have no impact on the \bgagg\ limits. 
+Each resonant-frequency step is denoted as a ``scan'' 
+and the data integration time was about 32-42 minutes. %The integration 
+%time was determined based on the target \bgagg\ limits and the experimental 
+%parameters; 
+The variation of the integration 
+time aimed to remove the frequency-dependence in the target \bgagg\ limits 
+caused by frequency dependence of the added noise \ta. 
 
-%In order to perform a calibration for the amplification chain, 
-%the HEMT was connected to a heat source (a 50-$\Omega$ resistor) instead of
-%the cavity;
-%various values of input currents were sent to the source to change its
-%temperature monitored by a thermometer. The power from the source
-%was delivered following the same transmission line as that in the axion
-%data running. 
-%The output power is fitted to a first-order polynomial, as a function of
-%the source temperature, to extract the gain and added noise \ta\ for the
-%amplification chain. The value of \ta\ is about \noise~K. 
 %
 
 
@@ -424,54 +429,61 @@ developed by the HAYSTAC experiment~\cite{HAYSTACII} and the details are
 described in Ref.~\cite{TASEHAnalysis}. The fast Fourier transform (FFT) 
 algorithm is performed on the IQ time series data to obtain the 
 frequency-domain power spectrum. 
-%Apart from the flat baseline as described by
-%Eq.~\eqref{eq:pn}, the noise spectrum observed by TASEH has an additional
-%component with a Lorentzian shape due to the higher temperature at the
-%cavity with respect to that in the DR. 
 The Savitzky-Golay (SG) 
-filter~\cite{SGFilter} is applied to remove the Lorentzian structure of 
+filter~\cite{SGFilter} is applied to model the Lorentzian structure of 
 the background caused by the temperature difference between the cavity and 
-the mixing flange [Eq.~\eqref{eq:pn}]. All the spectra from different 
+the mixing flange [Eq.~\eqref{eq:pn}] and to obtain the 
+the average noise power. %If the axion signal exists, there will be 
+%a significant excess above the average noise. 
+Deviations from the average noise power are compared with the 
+uncertainty on the averaged power spectrum, which defines the 
+observed SNR (oSNR); there will be a significant excess above zero if the 
+axion signal exists. All the spectra from different 
 frequency scans, particularly for the frequency bins that appear in 
 multiple spectra, are combined with a weighting algorithm. 
-The uncertainty of the averaged power at the overlapped region is
-reduced due to the combination. 
-In order to maximize the SNR, a running window of 
+%The uncertainty of the averaged power at the overlapped region is
+%reduced due to the combination. 
+In order to maximize the oSNR, a running window of 
 five consecutive bins in the combined spectrum is applied and the five bins 
 within each window are merged to construct a final spectrum. 
 The five frequency bins correspond to the 5-kHz axion signal line width,  
-derived from the standard assumption of axion signal line shape as described 
-by Eq.~\eqref{eq:simplesignal}. 
-This signal line shape is also used when defining the maximum likelihood 
-weights for merging: 
-\begin{equation}
-\mathcal{F}(f, f_a) = \frac{2}{\sqrt{\pi}}\sqrt{f-f_a}\left(\frac{3}{\alpha}\right)^{3/2}
-e^{\frac{-3\left(f-f_a\right)}{\alpha}},
-\label{eq:simplesignal}
-\end{equation}
-where $\alpha\equiv  f_a \left<v^2\right>/c^2$. 
-Here, the frequency $f$ must be greater or equal to the axion frequency 
-$f_a=\left.\ma c^2\middle/h\right.$. 
-In this standard assumption of axion signal line shape, 
-the DM halo density distribution is assumed 
-to be spherically symmetric and close to be isothermal, which results in a 
-velocity distribution similar to the Maxwell-Boltzmann distribution. 
-Therefore, the variance $\left<v^2\right>$ and the most probable velocity
-(speed) $v_p$ are related to each other:
-$\left<v^2\right>=3v_p^2/2=$(270~km/s)$^2$, where $v_p=220$~km/s is the local
-circular velocity of DM in the galactic rest frame and this value is also
-used by other axion experiments.
+assuming a standard Maxwellian axion line shape with a velocity 
+variance $\left<v^2\right>=$(270~km/s)$^2$~\cite{HAYSTACII}. 
+%as described 
+%by Eq.~\eqref{eq:simplesignal}. 
+This line shape is also used when defining the maximum likelihood 
+weights for merging. 
+%\begin{equation}
+%\mathcal{F}(f, f_a) = \frac{2}{\sqrt{\pi}}\sqrt{f-f_a}\left(\frac{3}{\alpha}\right)^{3/2}
+%e^{\frac{-3\left(f-f_a\right)}{\alpha}},
+%\label{eq:simplesignal}
+%\end{equation}
+%where $\alpha\equiv  f_a \left<v^2\right>/c^2$. 
+%Here, the frequency $f$ must be greater or equal to the axion frequency 
+%$f_a=\left.\ma c^2\middle/h\right.$. 
+%In this standard assumption, 
+%the DM halo density distribution is assumed 
+%to be spherically symmetric and close to be isothermal, which results in a 
+%velocity distribution similar to the Maxwell-Boltzmann distribution. 
+%Therefore, the variance $\left<v^2\right>$ and the most probable velocity 
+%$v_p$ are related to each other:
+%$\left<v^2\right>=3v_p^2/2=$(270~km/s)$^2$, where $v_p=220$~km/s is the local
+%circular velocity of DM in the galactic rest frame and this value is also
+%used by other axion experiments.
 
 
 
- After the merging, if there were any potential signal with an SNR larger than 
-3.355, a rescan would be proceeded to check if it were a real signal 
-or a statistical fluctuation. 
-The procedure of the CD102 data taking was to perform a rescan after 
-covering every 10~MHz; the rescan was done by adjusting the tuning rod of the 
-cavity so to match the resonant frequency to the frequency of the candidate. 
-In total, 22 candidates with an SNR greater than 3.355 were found. 
-Among them, 10 candidates were from the fluctuations because they were gone 
+% After the merging, if there were any potential signal with an oSNR larger than 
+%3.355, a rescan would be proceeded to check if it were a real signal 
+%or a statistical fluctuation. 
+%A rescan was performed after 
+%covering every 10~MHz; the rescan was done by adjusting the tuning rod of the 
+%cavity so to match the resonant frequency to the frequency of the candidate. 
+%In total, 22 candidates with an oSNR greater than 3.355 were found. 
+After the merging, 22 candidates with an oSNR greater than 3.355 were found and 
+a rescan was performed to check if they were real signals  
+or statistical fluctuations.        
+Among them, 20 candidates were from the fluctuations because they were gone 
 after a few rescans. 
 The remaining two candidates, in the frequency ranges of 
 4.71017 -- 4.71019~GHz and 4.74730 -- 4.74738~GHz, are excluded from 
@@ -486,10 +498,12 @@ Therefore, no limits are placed for the above two frequency ranges.
 %% results
 Since no candidates were found after the rescan, the upper limits 
 at 95\% confidence level (C.L.) on the \ggamma\ and the 
- \gagg\ are derived by setting the maximum SNR equal to five.  
-Figure~\ref{fig:gaggall} shows the limits on the \gagg\ from TASEH and the 
+ \gagg\ are derived by setting the maximum SNR equal to five, 
+with the assumption that axions make up 100\% of the local dark matter 
+density.  
+Figure~\ref{fig:gaggall} shows the \gagg\ limits of TASEH and the 
 ratio of the limits on the \ggamma\ 
-with respect to the KSVZ benchmark value ($\left|g_\text{KSVZ}\right|=0.97$) 
+with respect to the KSVZ benchmark value 
 from TASEH together with those from the previous searches. 
 The limits on 
 \gagg\ range from \lolimit\GeVinv\ to \hilimit\GeVinv, with an average 
@@ -505,11 +519,10 @@ comes from the frequency bins near the boundaries of the spectrum.
 The analysis that merges bins without 
 assuming a signal line shape results in $\approx5.5$\% larger values on the 
 \gagg\ limits. If a Gaussian signal line shape with an FWHM of 2.5~kHz,  
-about half of the axion line width in Eq.~\eqref{eq:simplesignal}, is 
-assumed instead, the limits will be $\approx3.8$\% smaller than the central 
-results. If the \gagg\ limits are derived from the observed SNR as described 
-in the ADMX paper~\cite{ADMXVIII},
-rather than using the 5$\sigma$ target SNR, the average limit on \gagg\ will
+ is assumed instead, the limits will be $\approx3.8$\% smaller than the 
+central results. If the \gagg\ limits are derived from the oSNR as 
+described in the ADMX paper~\cite{ADMXVIII},
+rather than using the 5$\sigma$ target SNR, the average limit on \gagg\ will 
 be $\approx\ADMXavelimit\GeVinv$. 
 %
 Overall the total relative systematic uncertainty is 
@@ -526,6 +539,7 @@ SG-filter parameters.
 \begin{figure*} [htbp]
   \centering
   \includegraphics[width=12.9cm]{figures/combineTASEH_all.png}
+%  \includegraphics[width=8.6cm]{figures/combineTASEH_all.png}
   \caption{The 95\% C.L. limits on \gagg\ from TASEH and the ratio of the 
 limits on \ggamma\ with respect to 
 the benchmark value $\left|g_\text{KSVZ}\right|$ 
@@ -545,7 +559,7 @@ values predicted by the KSVZ and DFSZ benchmark models, respectively.
 
 %%%% faxion
 After the collection of the CD102 data, 
-the synthetic axion signals were injected into the cavity and read out via the 
+synthetic axion signals were injected into the cavity and read out via the 
 same transmission line and amplification chain. 
 %Due to the uncertainties on the losses of signal transmission
 % lines, the synthetic axion signals are not used to perform an absolute 
@@ -562,8 +576,8 @@ $\ggamma\approx {\cal O}\left(10\left|g_\text{KSVZ}\right|\right)$.
 
 
 %% conclusion 
-This Letter presents the first results of a search for axions for the mass 
-range $\mlo < \ma < \mhi \muevcc$. 
+In summary, a search for axions in the mass 
+range $\mlo < \ma < \mhi \muevcc$ was performed by the TASEH Collaboration.  
 Apart from the non-axion signals, no candidates with a significance more than
 3.355 were found. The experiment excludes models with the 
 axion-two-photon coupling $\gagg\gtrsim \avelimit\GeVinv$ at 95\% C.L.,
@@ -572,17 +586,15 @@ above the benchmark KSVZ model. The sensitivity on \gagg\ reached by TASEH
 is three orders of magnitude better than the existing limits. 
 It is also the first time that a haloscope-type experiment places 
 constraints in this mass region. 
-
-%The target of TASEH is to search for axions for the mass range of 
-%16.5--20.7\muevcc\ corresponding to a frequency range of 4--5~GHz, with a 
-%capability to be extended to 2.5--6~GHz in the future. 
+The target of TASEH is to search for axions in the mass range of 
+16.5--20.7\muevcc\ corresponding to a frequency range of 4--5~GHz. 
 %In the coming years, several upgrades are expected, including: the use of a 
 %quantum-limited Josephson parametric amplifier as the first-stage amplifier, 
 %the replacement of the existing dilution refrigerator with a new one that has 
 %a magnetic field of about 9~Tesla and a larger bore size, and the development 
 %of a new cavity with a significantly larger effective volume. 
-%With the improvements of the experimental setup and several years of data 
-%taking, TASEH is expected to probe the QCD axion band in the target mass range.
+With the upcoming upgrades of the experimental setup and several years of data 
+taking, TASEH is expected to probe the QCD axion band in the target mass range.
 
 \begin{acknowledgments}
 We thank Chao-Lin Kuo for his help to initiate this project as well as
