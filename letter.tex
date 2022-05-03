@@ -167,9 +167,9 @@ to the readout probe followed by a low-noise linear amplifier.
 %of possible axion masses. 
 
 Several haloscope experiments have actively carried out axion searches, and 
-a few have reached or approached the benchmark values of \bgagg. 
-The most significant efforts are from 
-the Axion Dark Matter 
+the limits on the \bgagg\ from a few of them have 
+reached or approached the benchmark values. The most significant efforts 
+are from the Axion Dark Matter 
 eXperiment (ADMX), placing tight constraints within the mass range of 
 1.9--4.2\muevcc~\cite{ADMXI,ADMXII,ADMXIII,ADMXIV,ADMXV,ADMXVI,ADMXVII}. 
 Others include the Haloscope at Yale Sensitive to Axion Cold dark matter 
@@ -186,14 +186,17 @@ The detector of TASEH is located at the Department of Physics, National
 Central University, Taiwan and housed within a cryogen-free 
 dilution refrigerator (DR) from BlueFors. An 8-Tesla 
 superconducting solenoid with a 
-bore diameter of 76~mm and a length of 240 mm is integrated with the DR. 
+bore diameter of 76~mm and a length of 240 mm is integrated with the DR.  
+The DR has multiple flanges at different temperatures: 50K, 4K, still, 
+and mixing flanges, among which the mixing flange could reach the lowest 
+temperature at $T_{\rm mx}\simeq27$~mK. 
 %
 During the data taking, the cavity sat in the center of the magnet bore 
-and was connected via holders to the mixing flange of the DR at a 
-temperature of $T_{\rm mx}\simeq27$~mK. 
-The temperature of the cavity stayed at $T_\text{c}\simeq155$~mK, higher 
-with respect to the mixing flange; it is believed that the cavity had an 
-unexpected thermal contact with the radiation shield in the DR. 
+and was connected via holders to the mixing flange of the DR. %at a 
+%temperature of $T_{\rm mx}\simeq27$~mK. 
+%The temperature of the cavity stayed at $T_\text{c}\simeq155$~mK, higher 
+%with respect to the mixing flange; it is believed that the cavity had an 
+%unexpected thermal contact with the radiation shield in the DR. 
 The $0.234$-L cavity, 
 made of oxygen-free high-conductivity (OFHC) copper, 
  is a two-cell cylinder split along 
@@ -235,12 +238,15 @@ in Ref.~\cite{TASEHInstrumentation}.
   \caption{%The schematic diagram of the TASEH microwave system. 
    The simplified diagram for the TASEH apparatus.
    The dashed line separates the components at room temperature 
- and at cryogenic temperatures. A switch is connected to the 
- cavity during data taking, the bypass for the blackbody radiation 
- source is used for the calibration of the amplification chain. 
+ and at cryogenic temperatures. The output transmission line 
+ (thick line) includes a switch, a circulator, an HEMT 
+ amplifier, and room-temperature amplifiers.  
+ Via the cryogenic switch, the output line can also be connected                                                                                             
+ to a blackbody radiation source, made of a 50-$\Omega$ terminator, 
+ for calibration of the amplification chain. 
  The two input lines, used to inject MW signals, have one attenuator 
  thermally anchored at each cold flange to reduce the broadband 
- radiation from the higher temperature environment or flanges.    
+ radiation from the higher-temperature environment or flanges.    
   }
   \label{fig:TASEH}
 \end{figure}
@@ -349,7 +355,7 @@ the vacuum fluctuation.
 The difference
 of the effective temperatures $\Tilde{T}_\text{c}-\Tilde{T}_\text{mx}$ is
 modulated by a Lorentzian function $L(\omega)$. 
-If the physical temperatures $T_\text{c}$ and $T_\text{mx}$ 
+If the physical temperature of the cavity $T_\text{c}$ and $T_\text{mx}$ 
 were identical, the thermal noise spectrum from the cavity would be white. 
 The derivation of the first two terms in Eq.~\eqref{eq:pn} can be found in
 Ref.~\cite{TASEHAnalysis}. 
@@ -360,7 +366,8 @@ Ref.~\cite{TASEHAnalysis}.
 %the values of $T_\text{b}$, $T_\text{qn}$, and \ta\ are estimated to be about 
 %0.07~K, 0.12~K, and \noise~K, respectively.  
 %Therefore, 
-The \ta\ obtained from the calibration is about \noise~K and  
+The \ta\ obtained from the calibration via the blackbody radiation source 
+in Fig.~\ref{fig:TASEH} is about \noise~K and  
 the baseline value of \tsys\ is about 2.0--2.3~K. 
 
 
@@ -371,6 +378,10 @@ The CD102 data cover the frequency range of \flo--\fhi~GHz. In this Letter,
 most of the frequencies in unit of GHz are quoted with five decimal places as the 
 absolute accuracy of frequency is $\approx 10$~kHz. It shall be noted that the 
 frequency resolution is 1~kHz.  
+During the CD102 data run, 
+the temperature of the cavity stayed at $T_\text{c}\simeq155$~mK, higher 
+with respect to the mixing flange; it is believed that the cavity had an 
+unexpected thermal contact with the radiation shield in the DR. 
 The form factor $C$ for 
 the TM$_{010}$ mode varies from 0.60 to 0.61 over the operational 
 frequency range. 
@@ -418,8 +429,9 @@ frequency-domain power spectrum.
 %component with a Lorentzian shape due to the higher temperature at the
 %cavity with respect to that in the DR. 
 The Savitzky-Golay (SG) 
-filter~\cite{SGFilter} is applied to remove the structure of the background 
-in the frequency-domain power spectrum. All the spectra from different 
+filter~\cite{SGFilter} is applied to remove the Lorentzian structure of 
+the background caused by the temperature difference between the cavity and 
+the mixing flange [Eq.~\eqref{eq:pn}]. All the spectra from different 
 frequency scans, particularly for the frequency bins that appear in 
 multiple spectra, are combined with a weighting algorithm. 
 The uncertainty of the averaged power at the overlapped region is
