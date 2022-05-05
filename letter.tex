@@ -88,7 +88,7 @@ nobibnotes,
 \preprint{APS/123-QED}
 
 %\title{First Results from the Taiwan Axion Search Experiment with Haloscope in the \mlo--\mhi\muevcc\ Mass Range}% Force line breaks with \\
-\title{First Results from the Taiwan Axion Search Experiment with Haloscope at 19.5\muevcc}% Force line breaks with \\
+\title{First Results from the Taiwan Axion Search Experiment with Haloscope at 19.6\muevcc}% Force line breaks with \\
 
 \input{full_author.tex}
 
@@ -104,8 +104,9 @@ Apart from the non-axion signals, no candidates with
 a significance more than 3.355 were found. The experiment excludes 
 models with the axion-two-photon coupling $\gagg\gtrsim \avelimit\GeVinv$, 
 a factor of eleven above the benchmark 
-KSVZ model in the mass range $\mlo < \ma < \mhi \muevcc$, reaching 
-a sensitivity three orders of magnitude better than any existing limits. 
+KSVZ model, reaching 
+a sensitivity three orders of magnitude better than any existing limits 
+ in the mass range $\mlo < \ma < \mhi \muevcc$.  
  It is also the first time that a haloscope-type experiment places 
 constraints on the \bgagg\ in this mass region.
 
@@ -150,10 +151,10 @@ observed cold DM density~\cite{QCDCalI,QCDCalII,QCDCalIII,QCDCalIV,QCDCalV,QCDCa
 Axions could be detected and studied via their two-photon interaction, 
 %the so-called ``inverse Primakoff effect'', 
 of which the strength is described by the coupling constant \bgagg. 
-The detectors with the best sensitivities to axions with a mass of 
+The detectors with the best sensitivities to axion DMs with a mass of 
 $\ma\approx \muevcc$, as first proposed by 
-Sikivie~\cite{SikivieI,SikivieII},  
-are haloscopes consisting of a microwave (MW) cavity immersed in a strong static 
+Sikivie~\cite{SikivieI,SikivieII}, are haloscopes consisting of a microwave 
+(MW) cavity immersed in a strong static 
 magnetic field and operated at a cryogenic temperature. 
 In the presence of an external magnetic field, the ambient oscillating axion 
 field drives the cavity and they resonate when the frequencies of the 
@@ -166,11 +167,10 @@ to the readout probe followed by a low-noise linear amplifier.
 %the cavity resonator must allow the possibility to be tuned through a range
 %of possible axion masses. 
 
-Several haloscope experiments have actively carried out axion searches, and 
-the limits on the \bgagg\ from a few of them have 
-reached or approached the benchmark values. The most significant efforts 
-are from the Axion Dark Matter 
-eXperiment (ADMX), placing tight constraints within the mass range of 
+Several haloscope experiments have actively carried out axion searches. 
+The most significant efforts are from the Axion Dark Matter 
+eXperiment (ADMX), placing tight constraints on the \bgagg\ 
+within the mass range of 
 1.9--4.2\muevcc~\cite{ADMXI,ADMXII,ADMXIII,ADMXIV,ADMXV,ADMXVI,ADMXVII}. 
 Others include the Haloscope at Yale Sensitive to Axion Cold dark matter 
 (HAYSTAC)~\cite{HAYSTACIII,HAYSTACIV,HAYSTACI}, the Center 
@@ -189,28 +189,22 @@ superconducting solenoid with a
 bore diameter of 76~mm and a length of 240 mm is integrated with the DR.  
 The DR has multiple flanges at different temperatures: 50K, 4K, still, 
 and mixing flanges, among which the mixing flange could reach the lowest 
-temperature at $T_{\rm mx}\simeq27$~mK. 
+temperature at $\simeq20$~mK. 
 %
 During the data taking, the cavity sat in the center of the magnet bore 
-and was connected via holders to the mixing flange. %at a 
-%temperature of $T_{\rm mx}\simeq27$~mK. 
-%The temperature of the cavity stayed at $T_\text{c}\simeq155$~mK, higher 
-%with respect to the mixing flange; it is believed that the cavity had an 
-%unexpected thermal contact with the radiation shield in the DR. 
+and was connected via holders to the mixing flange. 
 The $0.234$-L cavity, 
 made of oxygen-free high-conductivity (OFHC) copper, 
- is a two-cell cylinder split along 
-the axial direction, with an inner radius of 2.5~cm and a 
-height of 12~cm. %In order to maintain a smooth surface, the cavity underwent 
-%the processes of annealing, polishing, and chemical cleaning. 
+has an inner radius of 2.5~cm and a height of 12~cm and 
+ is split into two halves along the axial direction to reduce the loss from 
+the seam~\cite{CAPPCavity}. 
 The resonant frequency can be tuned via the rotation of an off-axis OFHC 
 copper tuning rod. 
 %
 A readout probe, made of a 50-$\Omega$ semi-rigid coaxial cable that was 
-soldered to an SMA (SubMiniature version A) connector, was inserted into the 
-cavity.  
-An additional weak-coupling probe, made of a standard SMA 
-product, was used to inject MW signals for examining the cavity 
+soldered to an SMA connector, was inserted into the cavity.  
+An additional weak-coupling probe was used to inject MW signals for examining 
+the cavity 
 characteristics and for testing the signal receivers.  
 The signal from the readout probe was directed to an 
 impedance-matched amplification chain. The first-stage amplifier was 
@@ -256,10 +250,6 @@ in Ref.~\cite{TASEHInstrumentation}.
   \label{fig:TASEH}
 \end{figure}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{The expected axion signal power and signal line shape}
-%\label{sec:introsignal}
 
 The signal power extracted from a MW cavity on resonance is given 
 by~\cite{AxionFormula,HAYSTACIII}:
@@ -310,32 +300,31 @@ field strength along the radial and axial directions.
 For cylindrical cavities, the largest form factor is from the 
 TM$_{010}$ mode. The expected signal power derived from the experimental 
 parameters of TASEH is $P_s\simeq 1.4\times10^{-24}$~W for a KSVZ axion 
-with a mass of 19.5\muevcc. 
+with a mass of 19.6\muevcc. 
 
 In the axion experiments, the figure of merit that determines the design of 
 the experimental setup is the signal-to-noise ratio
 (SNR), i.e. the ratio of the signal power $P_s$ to the fluctuation in 
-the averaged noise power spectrum $\sigma_n$. 
-According to Dicke's Radiometer Equation~\cite{Dicke}, the $\sigma_n$ 
-is given by: 
+the averaged noise power spectrum $\sigma_n$~\cite{Dicke}, given by:  
+%According to Dicke's Radiometer Equation~\cite{Dicke}, the $\sigma_n$ 
+%is given by: 
+%\begin{equation}
+% \sigma_n  =  k_B\tsys\sqrt{\frac{\Delta f}{t}}, 
+% \label{eq:sigman}
+%\end{equation}
+%where \tsys\ is the system noise temperature, an effective 
+%temperature associated with the total noise of the system, 
+%$t$ is the data integration time and $\Delta f$ is the resolution bandwidth. 
+%Assuming that all the axion signal power falls within $\Delta f$, 
+%the SNR will therefore be:
 \begin{equation}
- \sigma_n  =  k_B\tsys\sqrt{\frac{\Delta f}{t}}, 
- \label{eq:sigman}
-\end{equation}
-where \tsys\ is the system noise temperature, an effective 
-temperature associated with the total noise of the system, 
-$t$ is the data integration time $t$ 
-and $\Delta f$ is the resolution bandwidth. 
-Assuming that all the axion signal power falls within $\Delta f$, 
-the SNR will therefore be:
-\begin{equation}
-   \text{SNR}  =  \frac{P_s}{\sigma_n}=  \frac{P_s}{k_B\tsys}\sqrt{\frac{t}{\Delta f}}.
+   \text{SNR}  =  \frac{P_s}{\sigma_n}=  \frac{P_s}{k_B\tsys}\sqrt{\frac{t}{\Delta f}},
  \label{eq:SNR}
 \end{equation}  
-%One could see that the SNR is maximized by an experimental setup with 
-%a strong magnetic field, a large cavity volume, an efficient cavity 
-%resonant mode, a receiver with low system noise temperature, and a 
-%long integration time. 
+where \tsys\ is the system noise temperature, an effective 
+temperature associated with the total noise of the system, 
+$t$ is the data integration time and $\Delta f$ is the resolution bandwidth. 
+Here, one assumes that all the axion signal power falls within $\Delta f$.  
 
 
 The system noise temperature \tsys\ has three major components:
@@ -360,8 +349,9 @@ the vacuum fluctuation.
 The difference
 of the effective temperatures $\Tilde{T}_\text{c}-\Tilde{T}_\text{mx}$ is
 modulated by a Lorentzian function $L(\omega)$. 
-If the physical temperature of the cavity $T_\text{c}$ and $T_\text{mx}$ 
-were identical, the thermal noise spectrum from the cavity would be white. 
+If the physical temperatures of the cavity $T_\text{c}$ and of 
+the mixing flange $T_\text{mx}$ 
+are identical, the thermal noise spectrum from the cavity is flat. 
 The derivation of the first two terms in Eq.~\eqref{eq:pn} can be found in
 Ref.~\cite{TASEHAnalysis}. 
 %
@@ -378,37 +368,46 @@ instead of the cavity via a cryogenic switch;
 various values of input currents were sent to the 
 source to change its temperature monitored by a thermometer. 
 The output power is fitted to a first-order polynomial, as a function of
-the source temperature, to extract the gain and added noise \ta\ for the
-amplification chain. The \ta\ obtained from the calibration is 
-about \noise~K. Therefore, the baseline value of \tsys\ is about 2.0--2.3~K. 
+the source temperature, to extract the gain and added noise \ta.
 
 
 The data for the analysis presented here were collected by TASEH 
 from October 13, 2021 to November 15, 2021, and are termed as the CD102 data, 
 where CD stands for ``cool down''. 
 The CD102 data cover the frequency range of \flo--\fhi~GHz. In this Letter, 
-most of the frequencies in unit of GHz are quoted with five decimal places as the 
-absolute accuracy of frequency is $\approx 10$~kHz. It shall be noted that the 
-frequency resolution is 1~kHz.  
+most of the frequencies in unit of GHz are quoted with five decimal places as 
+the absolute accuracy of frequency is $\approx 10$~kHz. It shall be noted 
+that the frequency resolution is 1~kHz.  
 During the CD102 data run, 
 the temperature of the cavity stayed at $T_\text{c}\simeq155$~mK, higher 
-with respect to the mixing flange; it is believed that the cavity had an 
+with respect to the mixing flange $T_\text{mx}\simeq27$~mK; it is believed 
+that the cavity had an 
 unexpected thermal contact with the radiation shield in the DR. 
+As a result, the $\Tilde{T}_\text{c}$ and $\Tilde{T}_\text{mx}$ 
+are 0.18~K and 0.11~K, respectively. 
 The form factor $C$ for 
 the TM$_{010}$ mode varies from 0.60 to 0.61 over the operational 
 frequency range. 
 The $Q_0$ at the cryogenic temperature is $\simeq 60700$. 
 The depth of the readout probe was set for 
-$\beta\simeq2$ since this value maximizes the scan rate, namely the coverage 
-of frequency scans for a given amount of time. Therefore, 
+$\beta\simeq2$ since this value, for a given amount 
+of time and a fixed value of SNR, maximizes the scan rate,  
+namely the coverage of frequency for a certain period of time. 
+Therefore, 
 the cavity line width, $\left.\omega_c\middle/2\pi Q_L\right.$, is about 
 240~kHz. 
-There were 837 resonant-frequency steps in total, with a frequency difference 
+
+The calibration was carried out before, during, and after the data taking,
+which showed that the performance of the system was stable over time. 
+The \ta\ obtained from the calibration is 
+about \noise~K, with a frequency dependence. Therefore, the baseline value 
+of \tsys\ is about 2.0--2.3~K. In the CD102 run, 
+there were 837 resonant-frequency steps in total, with a frequency difference 
 of $\Delta f_\text{s}=95-115$~kHz between the steps. The value of 
 $\Delta f_\text{s}$ was kept within 10\% of 105~kHz ($\lesssim$ half of the 
 cavity line width) rather than 
 a fixed value, such that the rotation angle of the tuning rod did not need to 
-be fine-tuned and the operation time could be minimized; a 10\% variation of 
+be fine-tuned and the operation time could be minimized. A 10\% variation of 
 the $\Delta f_\text{s}$ is found to have no impact on the \bgagg\ limits. 
 Each resonant-frequency step is denoted as a ``scan'' 
 and the data integration time was about 32-42 minutes. %The integration 
@@ -426,7 +425,7 @@ caused by frequency dependence of the added noise \ta.
 
    The analysis of the TASEH CD102 data follows the procedure similar to that 
 developed by the HAYSTAC experiment~\cite{HAYSTACII} and the details are 
-described in Ref.~\cite{TASEHAnalysis}. The fast Fourier transform (FFT) 
+described in Ref.~\cite{TASEHAnalysis}. The fast Fourier transform 
 algorithm is performed on the IQ time series data to obtain the 
 frequency-domain power spectrum. 
 The Savitzky-Golay (SG) 
@@ -437,13 +436,13 @@ the average noise power. %If the axion signal exists, there will be
 %a significant excess above the average noise. 
 Deviations from the average noise power are compared with the 
 uncertainty on the averaged power spectrum, which defines the 
-observed SNR (oSNR); there will be a significant excess above zero if the 
+observed SNR; there will be a significant excess above zero if the 
 axion signal exists. All the spectra from different 
 frequency scans, particularly for the frequency bins that appear in 
 multiple spectra, are combined with a weighting algorithm. 
 %The uncertainty of the averaged power at the overlapped region is
 %reduced due to the combination. 
-In order to maximize the oSNR, a running window of 
+In order to maximize the SNR, a running window of 
 five consecutive bins in the combined spectrum is applied and the five bins 
 within each window are merged to construct a final spectrum. 
 The five frequency bins correspond to the 5-kHz axion signal line width,  
@@ -472,23 +471,16 @@ weights for merging.
 %used by other axion experiments.
 
 
-
-% After the merging, if there were any potential signal with an oSNR larger than 
-%3.355, a rescan would be proceeded to check if it were a real signal 
-%or a statistical fluctuation. 
-%A rescan was performed after 
-%covering every 10~MHz; the rescan was done by adjusting the tuning rod of the 
-%cavity so to match the resonant frequency to the frequency of the candidate. 
-%In total, 22 candidates with an oSNR greater than 3.355 were found. 
-After the merging, 22 candidates with an oSNR greater than 3.355 were found and 
+After the merging, 22 candidates with an SNR greater than 3.355 were found and 
 a rescan was performed to check if they were real signals  
 or statistical fluctuations.        
 Among them, 20 candidates were from the fluctuations because they were gone 
 after a few rescans. 
 The remaining two candidates, in the frequency ranges of 
-4.71017 -- 4.71019~GHz and 4.74730 -- 4.74738~GHz, are excluded from 
-consideration of axion signal candidates. The signal in the second frequency 
-range was detected via a portable antenna outside the DR and found 
+4.71017 -- 4.71019~GHz and 4.74730 -- 4.74738~GHz, are not 
+considered axion signal candidates for the following reasons. 
+The signal in the second frequency range was detected via a portable antenna 
+outside the DR and found 
 to come from the instrument control computer in the laboratory, while the 
 signal in the first frequency range was not 
 detected outside the DR but still present after 
@@ -497,14 +489,13 @@ Therefore, no limits are placed for the above two frequency ranges.
 
 %% results
 Since no candidates were found after the rescan, the upper limits 
-at 95\% confidence level (C.L.) on the \ggamma\ and the 
- \gagg\ are derived by setting the maximum SNR equal to five, 
+at 95\% confidence level (C.L.) on the \gagg\ are derived by setting the 
+maximum SNR equal to five, 
 with the assumption that axions make up 100\% of the local dark matter 
 density.  
 Figure~\ref{fig:gaggall} shows the \gagg\ limits of TASEH and the 
-ratio of the limits on the \ggamma\ 
-with respect to the KSVZ benchmark value 
-from TASEH together with those from the previous searches. 
+ratios relative to the KSVZ benchmark value,  
+ together with those from the previous searches. 
 The limits on 
 \gagg\ range from \lolimit\GeVinv\ to \hilimit\GeVinv, with an average 
 value of \avelimit\GeVinv; the lowest value comes from the frequency bins with 
@@ -516,14 +507,6 @@ comes from the frequency bins near the boundaries of the spectrum.
 %KSVZ model for the mass range $\mlo < \ma < \mhi \muevcc$ (corresponding to 
 %the frequency range of $\flo < f_a < \fhi$~GHz). 
 %
-The analysis that merges bins without 
-assuming a signal line shape results in $\approx5.5$\% larger values on the 
-\gagg\ limits. If a Gaussian signal line shape with an FWHM of 2.5~kHz,  
- is assumed instead, the limits will be $\approx3.8$\% smaller than the 
-central results. If the \gagg\ limits are derived from the oSNR as 
-described in the ADMX paper~\cite{ADMXVIII},
-rather than using the 5$\sigma$ target SNR, the average limit on \gagg\ will 
-be $\approx\ADMXavelimit\GeVinv$. 
 %
 Overall the total relative systematic uncertainty is 
 $\approx 4.6\%$, coming from the uncertainties on the loaded quality 
@@ -533,6 +516,15 @@ the lower boundaries of the frequency bins, and the variation of the
 SG-filter parameters. 
 
 
+The analysis that merges bins without 
+assuming a signal line shape results in $\approx5.5$\% larger values on the 
+\gagg\ limits. If a Gaussian signal line shape with an FWHM of 2.5~kHz  
+ is assumed instead, the limits will be $\approx3.8$\% smaller than the 
+central results. If the \gagg\ limits are derived from the observed SNR as 
+described in the ADMX paper~\cite{ADMXVIII}, 
+rather than using the 5$\sigma$ target SNR, the average limit on \gagg\ will 
+be $\approx\ADMXavelimit\GeVinv$. 
+
 
 
 
@@ -541,12 +533,12 @@ SG-filter parameters.
   \includegraphics[width=12.9cm]{figures/combineTASEH_all.png}
 %  \includegraphics[width=8.6cm]{figures/combineTASEH_all.png}
   \caption{The 95\% C.L. limits on \gagg\ from TASEH and the ratio of the 
-limits on \ggamma\ with respect to 
-the benchmark value $\left|g_\text{KSVZ}\right|$ 
- from the CD102 data of TASEH (red band) and previous searches performed by the ADMX, CAPP, and HAYSTAC Collaborations (inset). 
+limits with respect to the KSVZ benchmark value 
+ from the CD102 data (red band) and previous searches performed by the 
+ ADMX, CAPP, and HAYSTAC Collaborations (inset). 
  The blue error band indicates the systematic 
   uncertainties. The gray band in the inset shows the allowed region of 
- \ggamma\ vs. $m_a$ 
+ \gagg\ vs. $m_a$ 
  from various QCD axion models, while the blue and red dashed lines are the 
 values predicted by the KSVZ and DFSZ benchmark models, respectively.
  }
@@ -569,10 +561,10 @@ same transmission line and amplification chain.
 The procedure to generate axion-like signals is summarized in 
 Ref.~\cite{TASEHInstrumentation} and the analysis of the synthetic axion 
 data is described in Ref.~\cite{TASEHAnalysis}. 
-The analysis results of the synthetic axion signals demonstrates
+The analysis results demonstrates
 the capability of the experimental setup and the analysis strategy to discover
 an axion signal with 
-$\ggamma\approx {\cal O}\left(10\left|g_\text{KSVZ}\right|\right)$.
+$\gagg\approx {\cal O}\left(10\left|\bgagg^\text{KSVZ}\right|\right)$.
 
 
 %% conclusion 
@@ -583,7 +575,8 @@ Apart from the non-axion signals, no candidates with a significance more than
 axion-two-photon coupling $\gagg\gtrsim \avelimit\GeVinv$ at 95\% C.L.,
  a factor of eleven 
 above the benchmark KSVZ model. The sensitivity on \gagg\ reached by TASEH 
-is three orders of magnitude better than the existing limits. 
+is three orders of magnitude better than the existing limits in the same 
+mass range.  
 It is also the first time that a haloscope-type experiment places 
 constraints in this mass region. 
 The target of TASEH is to search for axions in the mass range of 
