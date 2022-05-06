@@ -187,13 +187,14 @@ Central University, Taiwan and housed within a cryogen-free
 dilution refrigerator (DR) from BlueFors. An 8-Tesla 
 superconducting solenoid with a 
 bore diameter of 76~mm and a length of 240 mm is integrated with the DR.  
-The DR has multiple flanges at different temperatures: 50K, 4K, still, 
+The DR has multiple flanges at different temperatures for 
+the required cooling: 50K, 4K, still, 
 and mixing flanges, among which the mixing flange could reach the lowest 
 temperature at $\simeq20$~mK. 
 %
 During the data taking, the cavity sat in the center of the magnet bore 
 and was connected via holders to the mixing flange. 
-The $0.234$-L cavity, 
+The $0.234$-L cylindrical cavity, 
 made of oxygen-free high-conductivity (OFHC) copper, 
 has an inner radius of 2.5~cm and a height of 12~cm and 
  is split into two halves along the axial direction to reduce the loss from 
@@ -228,24 +229,34 @@ in Ref.~\cite{TASEHInstrumentation}.
 
 \begin{figure} 
   \centering
-  \includegraphics[width=8.6cm]{figures/Simplified_wiring_V2.png}
-  \caption{%The schematic diagram of the TASEH microwave system. 
-   The simplified diagram for the TASEH apparatus.
-%   The dashed line separates the components at room temperature 
-% and at cryogenic temperatures. 
-%  The output transmission line 
-% (thick line) includes a switch, a circulator, an HEMT 
-% amplifier, and room-temperature amplifiers.  
- Via the cryogenic switch, the output transmission 
- line (thick line) can also be connected 
- to a blackbody radiation source, made of a 50-$\Omega$ terminator, 
- for calibration of the amplification chain. 
- The three-stage circulator, anchored at the mixing flange, 
- prevents thermal radiation from the HEMT                   
- amplifier back streaming to the cold cavity and then being reflected.  
- The two input lines, used to inject MW signals, have one attenuator 
- thermally anchored at each cold flange to reduce the broadband 
- radiation from the higher-temperature environment or flanges.    
+  \includegraphics[width=8.6cm]{figures/colored_Simplified_wiring_V2.png}
+  \caption{%
+%   The simplified diagram for the TASEH apparatus.
+% Via the cryogenic switch, the output transmission 
+% line (thick line) can also be connected 
+% to a blackbody radiation source, made of a 50-$\Omega$ terminator, 
+% for calibration of the amplification chain. 
+% The three-stage circulator, anchored at the mixing flange, 
+% prevents thermal radiation from the HEMT                   
+% amplifier back streaming to the cold cavity and then being reflected.  
+% The two input lines, used to inject MW signals, have one attenuator 
+% thermally anchored at each cold flange to reduce the broadband 
+% radiation from the higher-temperature environment or flanges.    
+The simplified diagram for the TASEH apparatus. 
+The apparatus is enclosed in a DR with several cold flanges for 
+the required cooling. 
+The microwave cavity with two coupling probes is immersed in the strong 
+magnetic field produced by the superconducting magnet.
+The axion-photon conversion signal from the readout probe is directed 
+to the readout electronics through the amplification chain (thick lines) 
+equipped with a HEMT amplifier in the first stage. 
+The circulator prevents thermal radiation from the HEMT amplifier back 
+streaming to the cold cavity and then being reflected. Via the
+cryogenic switch, the noise from the blackbody radiation source with a 
+controlled temperature $T_{\text b}$ is used to calibrate the added noise and 
+the overall gain of the amplification chain. Two heavily attenuated input 
+lines support scattering parameter measurements of the cavity and transmit 
+test signals. 
   }
   \label{fig:TASEH}
 \end{figure}
@@ -254,36 +265,40 @@ in Ref.~\cite{TASEHInstrumentation}.
 The signal power extracted from a MW cavity on resonance is given 
 by~\cite{AxionFormula,HAYSTACIII}:
 \begin{equation}
-P_s = \left(\bggamma^2\frac{\alpha^2\hbar^3c^3\rho_a}{\pi^2\Lambda^4}\right)\times
+%P_s = \left(\bggamma^2\frac{\alpha^2\hbar^3c^3\rho_a}{\pi^2\Lambda^4}\right)\times
+%\left(\omega_c\frac{1}{\mu_0}B_0^2VCQ_L\frac{\beta}{1+\beta}\right).
+P_s = \left(\bgagg^2\frac{\hbar^3c^3\rho_a}{m_a^2}\right)\times
 \left(\omega_c\frac{1}{\mu_0}B_0^2VCQ_L\frac{\beta}{1+\beta}\right).
 \label{eq:ps}
 \end{equation}
-The first set of parentheses contains physical constants, 
-a dimensionless model-dependent parameter \bggamma, and 
-the local dark-matter density 
+The first set of parentheses contains \bgagg, $m_a$, physical constants, 
+and the local dark-matter density 
 $\rho_a=0.45~\GeV/\mathrm{cm}^3$~\cite{[{}][{. Both $0.45~\GeV/\mathrm{cm}^3$ 
 (used by ADMX, HAYSTAC, CAPP, and QUAX-$a\gamma$) and $0.3~\GeV/\mathrm{cm}^3$ 
 (more commonly cited by the other direct DM search experiments) are consistent 
 with the recent measurements.}]Read:2014qva,PDG}. 
-The numerical values of \bggamma\ are -0.97 and 0.36 
-in the Kim-Shifman-Vainshtein-Zakharov (KSVZ)~\cite{KSVZI,KSVZII} and 
-the Dine-Fischler-Srednicki-Zhitnitsky (DFSZ)~\cite{DFSZI,DFSZII} benchmark 
-models, respectively. For the QCD axions, the \bgagg\ 
-is related to \bggamma\ and the axion mass \ma: 
+For the QCD axions, the \bgagg\ 
+is related to the axion mass \ma: 
 \begin{equation}
  \bgagg = \left(\frac{\bggamma\alpha}{\pi \Lambda^2}\right)\ma, 
 \label{eq:grelation}
 \end{equation}
-where $\alpha$ is the 
+where $\bggamma$ is a dimensionless model-dependent parameter,    
+with numerical values -0.97 and 0.36 
+in the Kim-Shifman-Vainshtein-Zakharov (KSVZ)~\cite{KSVZI,KSVZII} and 
+the Dine-Fischler-Srednicki-Zhitnitsky (DFSZ)~\cite{DFSZI,DFSZII} benchmark 
+models, respectively. The $\alpha$ is the 
 fine-structure constant and  $\Lambda=78~\MeV$ is a scale parameter that can 
 be derived from the mass and the decay constant of the pion and the ratio of 
 the up to down quark masses. 
 %
 The second set of parentheses contains parameters related to the experimental 
-setup: the angular resonant frequency of the cavity $\omega_c$, 
-the vacuum permeability $\mu_0$, the nominal strength of the external magnetic 
-field $B_0$, the effective volume of the cavity $V$, and the loaded quality factor of 
-the cavity \(Q_L=Q_0/(1+\beta)\), where $Q_0$ is the unloaded, intrinsic 
+setup: 
+%The parameters related to the experimental setup include: 
+the angular resonant frequency of the cavity $\omega_c$, the vacuum 
+permeability $\mu_0$, the nominal strength of the external magnetic field 
+$B_0$, the effective volume of the cavity $V$, and the loaded quality factor 
+of the cavity \(Q_L=Q_0/(1+\beta)\), where $Q_0$ is the unloaded, intrinsic 
 quality factor and $\beta$ is the coupling coefficient which 
 determines the amount 
 of coupling of the signal to the receiver. The form factor $C$ is the 
@@ -528,10 +543,10 @@ be $\approx\ADMXavelimit\GeVinv$.
 
 
 
-\begin{figure*} [htbp]
+\begin{figure*} 
   \centering
   \includegraphics[width=12.9cm]{figures/combineTASEH_all.png}
-%  \includegraphics[width=8.6cm]{figures/combineTASEH_all.png}
+%  \includegraphics[width=17.2cm]{figures/combineTASEH_all.png}
   \caption{The 95\% C.L. limits on \gagg\ from TASEH and the ratio of the 
 limits with respect to the KSVZ benchmark value 
  from the CD102 data (red band) and previous searches performed by the 
