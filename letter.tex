@@ -192,8 +192,9 @@ the required cooling: 50K, 4K, still,
 and mixing flanges, among which the mixing flange could reach the lowest 
 temperature at $\simeq20$~mK. 
 %
-During the data taking, the cavity sat in the center of the magnet bore 
-and was connected via holders to the mixing flange. 
+During the data taking, the MW cavity with two coupling probes 
+sits in the center of the magnet bore 
+and is connected via holders to the mixing flange. 
 The $0.234$-L cylindrical cavity, 
 made of oxygen-free high-conductivity (OFHC) copper, 
 has an inner radius of 2.5~cm and a height of 12~cm and 
@@ -201,29 +202,21 @@ has an inner radius of 2.5~cm and a height of 12~cm and
 the seam~\cite{CAPPCavity}. 
 The resonant frequency can be tuned via the rotation of an off-axis OFHC 
 copper tuning rod. 
-%
-A readout probe, made of a 50-$\Omega$ semi-rigid coaxial cable that was 
-soldered to an SMA connector, was inserted into the cavity.  
-An additional weak-coupling probe was used to inject MW signals for examining 
-the cavity 
-characteristics and for testing the signal receivers.  
-The signal from the readout probe was directed to an 
-impedance-matched amplification chain. The first-stage amplifier was 
-a low noise high-electron-mobility transistor (HEMT) amplifier 
-mounted on the 4K flange. %A three-stage circulator was anchored at 
-%the mixing flange to prevent thermal radiation from the HEMT 
-%amplifier back streaming to the cold cavity and then being reflected. 
-The signal was further amplified at room temperature via a 
+The axion-photon conversion signal from the readout probe is directed to an 
+impedance-matched amplification chain (thick lines in Fig.~\ref{fig:TASEH}). 
+The first-stage amplifier is a low noise high-electron-mobility-transistor 
+(HEMT) amplifier mounted on the 4K flange. 
+A circulator, anchored at the mixing flange, 
+prevents thermal radiation from the HEMT amplifier back 
+streaming to the cold cavity and then being reflected.  
+The signal is further amplified at room temperature via a 
 three-stage post-amplifier, and down-converted 
 and demodulated to in-phase (I) and quadrature (Q) components and digitized 
 by an analog-to-digital converter with a sampling rate of 2~MHz. 
-%Via a cryogenic microwave switch, the output line can also be connected 
-%to a blackbody radiation source, made of a 50-$\Omega$ terminator, for 
-%calibration. 
-Figure~\ref{fig:TASEH} shows a simplified diagram for the TASEH apparatus. 
-%which was used to examine the cavity characteristics, to perform the 
-%calibration of the amplification chain, and to carry out the axion 
-%detection experiment. 
+Two heavily attenuated input 
+lines support scattering parameter measurements of the cavity and transmit 
+test signals. 
+Figure~\ref{fig:TASEH} shows a simplified diagram of the TASEH apparatus. 
 More details of the TASEH detector can be found 
 in Ref.~\cite{TASEHInstrumentation}. 
 
@@ -231,33 +224,7 @@ in Ref.~\cite{TASEHInstrumentation}.
   \centering
   \includegraphics[width=8.6cm]{figures/colored_Simplified_wiring_V3.png}
   \caption{%
-%   The simplified diagram for the TASEH apparatus.
-% Via the cryogenic switch, the output transmission 
-% line (thick line) can also be connected 
-% to a blackbody radiation source, made of a 50-$\Omega$ terminator, 
-% for calibration of the amplification chain. 
-% The three-stage circulator, anchored at the mixing flange, 
-% prevents thermal radiation from the HEMT                   
-% amplifier back streaming to the cold cavity and then being reflected.  
-% The two input lines, used to inject MW signals, have one attenuator 
-% thermally anchored at each cold flange to reduce the broadband 
-% radiation from the higher-temperature environment or flanges.    
-The simplified diagram for the TASEH apparatus. 
-The apparatus is enclosed in a DR with several cold flanges for 
-the required cooling. 
-The microwave cavity with two coupling probes is immersed in the strong 
-magnetic field produced by the superconducting magnet.
-The axion-photon conversion signal from the readout probe is directed 
-to the readout electronics through the amplification chain (thick lines) 
-equipped with a HEMT amplifier in the first stage. 
-The circulator prevents thermal radiation from the HEMT amplifier back 
-streaming to the cold cavity and then being reflected. Via the
-cryogenic switch, the noise from the blackbody radiation source with a 
-controlled temperature $T_{\text b}$ is used to calibrate the added noise and 
-the overall gain of the amplification chain. Two heavily attenuated input 
-lines support scattering parameter measurements of the cavity and transmit 
-test signals. 
-  }
+The simplified diagram of the TASEH apparatus.}
   \label{fig:TASEH}
 \end{figure}
 
@@ -310,15 +277,14 @@ magnetic field $\vec{\bm{B}}$:
 \label{eq:formfactor} 
 \end{equation} 
 The magnetic field $\vec{\bm{B}}$ in TASEH points mostly along the axial
-direction of the cavity, with a small variation of
-field strength along the radial and axial directions. 
+direction of the cavity. 
 For cylindrical cavities, the largest form factor is from the 
 TM$_{010}$ mode. The expected signal power derived from the experimental 
 parameters of TASEH is $P_s\simeq 1.4\times10^{-24}$~W for a KSVZ axion 
 with a mass of 19.6\muevcc. 
 
-In the axion experiments, the figure of merit that determines the design of 
-the experimental setup is the signal-to-noise ratio
+In the haloscope experiments, the figure of merit that determines the design 
+of the experimental setup is the signal-to-noise ratio
 (SNR), i.e. the ratio of the signal power $P_s$ to the fluctuation in 
 the averaged noise power spectrum $\sigma_n$~\cite{Dicke}, given by:  
 %According to Dicke's Radiometer Equation~\cite{Dicke}, the $\sigma_n$ 
@@ -338,7 +304,7 @@ the averaged noise power spectrum $\sigma_n$~\cite{Dicke}, given by:
 \end{equation}  
 where \tsys\ is the system noise temperature, an effective 
 temperature associated with the total noise of the system, 
-$t$ is the data integration time and $\Delta f$ is the resolution bandwidth. 
+$t$ is the data integration time, and $\Delta f$ is the resolution bandwidth. 
 Here, one assumes that all the axion signal power falls within $\Delta f$.  
 
 
@@ -369,21 +335,19 @@ the mixing flange $T_\text{mx}$
 are identical, the thermal noise spectrum from the cavity is flat. 
 The derivation of the first two terms in Eq.~\eqref{eq:pn} can be found in
 Ref.~\cite{TASEHAnalysis}. 
-%
-%
-%Using the operation parameters of TASEH and 
-%the results from the calibration of readout electronics, 
-%the values of $T_\text{b}$, $T_\text{qn}$, and \ta\ are estimated to be about 
-%0.07~K, 0.12~K, and \noise~K, respectively.  
-%Therefore, 
 
-The calibration for the amplification chain was performed by 
+%Therefore, 
+%Via the
+%cryogenic switch, the noise from the blackbody radiation source with a 
+%controlled temperature $T_{\text b}$ is used to calibrate the added noise and 
+%the overall gain of the amplification chain. 
+The calibration for the amplification chain is performed by 
 connecting the HEMT to a blackbody radiation source (Fig.~\ref{fig:TASEH}) 
-instead of the cavity via a cryogenic switch; 
-various values of input currents were sent to the 
-source to change its temperature monitored by a thermometer. 
+instead of the cavity via a cryogenic switch.  
+Various values of input currents are sent to the 
+source to change its temperature $T_{\text b}$ monitored by a thermometer. 
 The output power is fitted to a first-order polynomial, as a function of
-the source temperature, to extract the gain and added noise \ta.
+the source temperature, to extract the overall gain and added noise \ta. 
 
 
 The data for the analysis presented here were collected by TASEH 
@@ -404,19 +368,17 @@ The form factor $C$ for
 the TM$_{010}$ mode varies from 0.60 to 0.61 over the operational 
 frequency range. 
 The $Q_0$ at the cryogenic temperature is $\simeq 60700$. 
-The depth of the readout probe was set for 
+The insertion depth of the readout probe is set for 
 $\beta\simeq2$ since this value, for a given amount 
-of time and a fixed value of SNR, maximizes the scan rate,  
-namely the coverage of frequency for a certain period of time. 
-Therefore, 
+of time and a fixed value of SNR, maximizes the frequency coverage. 
+In this case, 
 the cavity line width, $\left.\omega_c\middle/2\pi Q_L\right.$, is about 
 240~kHz. 
 
 The calibration was carried out before, during, and after the data taking,
 which showed that the performance of the system was stable over time. 
 The \ta\ obtained from the calibration is 
-about \noise~K, with a frequency dependence. Therefore, the baseline value 
-of \tsys\ is about 2.0--2.3~K. In the CD102 run, 
+about \noise~K, with a frequency dependence. In CD102, 
 there were 837 resonant-frequency steps in total, with a frequency difference 
 of $\Delta f_\text{s}=95-115$~kHz between the steps. The value of 
 $\Delta f_\text{s}$ was kept within 10\% of 105~kHz ($\lesssim$ half of the 
@@ -425,12 +387,9 @@ a fixed value, such that the rotation angle of the tuning rod did not need to
 be fine-tuned and the operation time could be minimized. A 10\% variation of 
 the $\Delta f_\text{s}$ is found to have no impact on the \bgagg\ limits. 
 Each resonant-frequency step is denoted as a ``scan'' 
-and the data integration time was about 32-42 minutes. %The integration 
-%time was determined based on the target \bgagg\ limits and the experimental 
-%parameters; 
-The variation of the integration 
-time aimed to remove the frequency-dependence in the target \bgagg\ limits 
-caused by frequency dependence of the added noise \ta. 
+and the data integration time was about 32-42 minutes. 
+The variation of the integration time was introduced to compensate 
+the frequency dependence of the added noise. 
 
 %
 
@@ -438,7 +397,7 @@ caused by frequency dependence of the added noise \ta.
 
 %%% analysis and results
 
-   The analysis of the TASEH CD102 data follows the procedure similar to that 
+   The analysis of the CD102 data follows the procedure similar to that 
 developed by the HAYSTAC experiment~\cite{HAYSTACII} and the details are 
 described in Ref.~\cite{TASEHAnalysis}. The fast Fourier transform 
 algorithm is performed on the IQ time series data to obtain the 
@@ -447,12 +406,10 @@ The Savitzky-Golay (SG)
 filter~\cite{SGFilter} is applied to model the Lorentzian structure of 
 the background caused by the temperature difference between the cavity and 
 the mixing flange [Eq.~\eqref{eq:pn}] and to obtain the 
-the average noise power. %If the axion signal exists, there will be 
-%a significant excess above the average noise. 
+the average noise power. 
 Deviations from the average noise power are compared with the 
 uncertainty on the averaged power spectrum, which defines the 
-observed SNR; there will be a significant excess above zero if the 
-axion signal exists. All the spectra from different 
+observed SNR. All the spectra from different 
 frequency scans, particularly for the frequency bins that appear in 
 multiple spectra, are combined with a weighting algorithm. 
 %The uncertainty of the averaged power at the overlapped region is
@@ -500,7 +457,7 @@ to come from the instrument control computer in the laboratory, while the
 signal in the first frequency range was not 
 detected outside the DR but still present after 
 turning off the external magnetic field. 
-Therefore, no limits are placed for the above two frequency ranges.  
+No limits are placed for the above two frequency ranges.  
 
 %% results
 Since no candidates were found after the rescan, the upper limits 
@@ -516,13 +473,6 @@ The limits on
 value of \avelimit\GeVinv; the lowest value comes from the frequency bins with 
 additional eight times more data from the rescans, while the highest value 
 comes from the frequency bins near the boundaries of the spectrum. 
-%The results of TASEH exclude the models with the axion-two-photon 
-%coupling $\gagg\gtrsim \avelimit\GeVinv$, a factor of eleven above the 
-%benchmark 
-%KSVZ model for the mass range $\mlo < \ma < \mhi \muevcc$ (corresponding to 
-%the frequency range of $\flo < f_a < \fhi$~GHz). 
-%
-%
 Overall the total relative systematic uncertainty is 
 $\approx 4.6\%$, coming from the uncertainties on the loaded quality 
 factor $Q_L$, the coupling coefficient $\beta$, the added noise temperature 
@@ -610,7 +560,9 @@ discussions on the microwave cavity design, Gray Rybka and Nicole Crisosto
 for their introduction of the ADMX experimental
 setup and analysis, Anson Hook for the discussions and the review of the
 axion theory, and Jiunn-Wei Chen, Cheng-Wei Chiang, Cheng-Pang Liu, and
-Asuka Ito for the discussions of future improvements in axion searches.
+Asuka Ito for the discussions of future improvements in axion searches. 
+We acknowledge support of microwave test and measurement equipment from the 
+National Chung-Shan Institute of Science and Technology. 
   The work of the TASEH Collaboration was funded by
 the Ministry of Science and Technology (MoST) of Taiwan with grant numbers
 MoST-109-2123-M-001-002, MoST-110-2123-M-001-006, MoST-110-2112-M-213-018,
