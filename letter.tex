@@ -213,7 +213,7 @@ prevents thermal radiation from the HEMT amplifier back
 streaming to the cold cavity and then being reflected.  
 The signal is further amplified at room temperature via a 
 three-stage post-amplifier, and down-converted 
-and demodulated to in-phase (I) and quadrature (Q) components and digitized 
+to in-phase (I) and quadrature (Q) components and digitized 
 by an analog-to-digital converter with a sampling rate of 2~MHz. 
 Two heavily attenuated input 
 lines support scattering parameter measurements of the cavity and transmit 
@@ -345,8 +345,8 @@ Ref.~\cite{TASEHAnalysis}.
 The calibration for the amplification chain is performed by 
 connecting the HEMT to a blackbody radiation source (Fig.~\ref{fig:TASEH}) 
 instead of the cavity via a cryogenic switch.  
-Various values of input currents are sent to the 
-source to change its temperature $T_{\text b}$ monitored by a thermometer. 
+Various values of input currents are sent to a nearby resistor heater  
+to change its temperature $T_{\text b}$ monitored by a thermometer. 
 The output power is fitted to a first-order polynomial, as a function of
 the source temperature, to extract the overall gain and added noise \ta. 
 
@@ -407,7 +407,7 @@ The Savitzky-Golay (SG)
 filter~\cite{SGFilter} is applied to model the Lorentzian structure of 
 the background caused by the temperature difference between the cavity and 
 the mixing flange [Eq.~\eqref{eq:pn}] and to obtain the 
-the average noise power. 
+average noise power. 
 Deviations from the average noise power are compared with the 
 uncertainty on the averaged power spectrum, which defines the 
 observed SNR. All the spectra from different 
@@ -522,8 +522,9 @@ values predicted by the KSVZ and DFSZ benchmark models, respectively.
 
 %%%% faxion
 After the collection of the CD102 data, 
-synthetic axion signals were injected into the cavity and read out via the 
-same transmission line and amplification chain. 
+synthetic axion signals were injected into the cavity via the 
+transmission input line (Fig.~\ref{fig:TASEH}) and read out 
+via the same amplification chain. 
 %Due to the uncertainties on the losses of signal transmission
 % lines, the synthetic axion signals are not used to perform an absolute 
 %calibration of the search sensitivity. Instead, 
@@ -532,7 +533,7 @@ same transmission line and amplification chain.
 The procedure to generate axion-like signals is summarized in 
 Ref.~\cite{TASEHInstrumentation} and the analysis of the synthetic axion 
 data is described in Ref.~\cite{TASEHAnalysis}. 
-The analysis results demonstrates
+The analysis results demonstrate 
 the capability of the experimental setup and the analysis strategy to discover
 an axion signal with 
 $\gagg\approx {\cal O}\left(10\left|\bgagg^\text{KSVZ}\right|\right)$.
