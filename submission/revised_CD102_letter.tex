@@ -1,3 +1,457 @@
+\documentclass[%
+ reprint,prl, %% for final paper
+superscriptaddress,
+nobibnotes,
+ amsmath,amssymb,
+ aps,
+]{revtex4-2}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{hyperref}% add hypertext capabilities
+\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+\usepackage{amsmath} %for multiline in equation
+
+
+
+\relax 
+
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{First Results from the Taiwan Axion Search Experiment with Haloscope at
+ 19.6$\,\mu\text{e\hspace{-.08em}V}$}
+
+%Hsin Chang
+\author{Hsin~Chang}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan}
+%Jing-Yang Chang
+\author{Jing-Yang~Chang}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan} 
+%Yi-Chieh Chang
+\author{Yi-Chieh~Chang}\affiliation{National Synchrotron Radiation Research Center, Hsinchu 300092, Taiwan} 
+%Yu-Han Chang
+\author{Yu-Han~Chang}\affiliation{Department of Physics, National Chung Hsing University, Taichung City 402202, Taiwan}
+%Yuan-Hann Chang
+\author{Yuan-Hann~Chang}\affiliation{Institute of Physics, Academia Sinica, Taipei City 115201, Taiwan}
+\affiliation{Center for High Energy and High Field Physics, National Central University, Taoyuan City 320317, Taiwan}
+%Chien-Han CHen
+\author{Chien-Han~Chen}\affiliation{Institute of Physics, Academia Sinica, Taipei City 115201, Taiwan} 
+%Ching-Fang Chen 
+\author{Ching-Fang~Chen}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan}
+%Kuan-Yu CHen
+\author{Kuan-Yu~Chen}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan} 
+%Yung-Fu Chen
+\author{Yung-Fu~Chen}\email[Correspondence to: ]{yfuchen@ncu.edu.tw}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan} 
+%Wei-Yuan James Chiang
+\author{Wei-Yuan~Chiang}\affiliation{National Synchrotron Radiation Research Center, Hsinchu 300092, Taiwan}
+%Wei-Chen Chien
+\author{Wei-Chen~Chien}\affiliation{Department of Physics, National Chung Hsing University, Taichung City 402202, Taiwan}
+%Hien Thi Doan
+\author{Hien~Thi~Doan}\affiliation{Institute of Physics, Academia Sinica, Taipei City 115201, Taiwan} 
+%Wei-Cheng Hung
+\author{Wei-Cheng~Hung}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan}\affiliation{Institute of Physics, Academia Sinica, Taipei City 115201, Taiwan} 
+%Watson Kuo
+\author{Watson~Kuo}\affiliation{Department of Physics, National Chung Hsing University, Taichung City 402202, Taiwan} 
+%Shou-Bai Lai
+\author{Shou-Bai~Lai}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan} 
+%Han-Wen Liu
+\author{Han-Wen~Liu}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan} 
+%Min-Wei Ouyang
+\author{Min-Wei~OuYang}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan}
+%Ping-I Wu
+\author{Ping-I~Wu}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan} 
+%Shin-Shan Yu
+\author{Shin-Shan~Yu}\email[Correspondence to: ]{syu@phy.ncu.edu.tw}\affiliation{Department of Physics, National Central University, Taoyuan City 320317, Taiwan}
+\affiliation{Center for High Energy and High Field Physics, National Central University, Taoyuan City 320317, Taiwan}
+
+
+\collaboration{TASEH Collaboration}
+
+
+\begin{abstract}
+
+ This Letter reports on the first results from the Taiwan Axion Search 
+Experiment with Haloscope, a search for axions using a microwave cavity at 
+frequencies between 4.70750 and 4.79815~GHz. Apart from the non-axion signals,
+ no candidates with a significance more than 3.355 were found. The experiment 
+excludes models with the axion-two-photon coupling 
+$\left|g_{a\gamma\gamma}\right|\gtrsim 8.2\times 10^{-14}\,\text{Ge\hspace{-.08em}V}^{-1}$, 
+a factor of eleven above the benchmark KSVZ model, 
+ in the mass range $19.4687 < m_a < 19.8436 \,\mu\text{e\hspace{-.08em}V}$.  
+ It is also the first time that a haloscope-type experiment places 
+constraints on $g_{a\gamma\gamma}$ in the mass region of 
+$19.4687 < m_a < 19.7639 \,\mu\text{e\hspace{-.08em}V}$, reaching    
+ a sensitivity three orders of magnitude better than the limits obtained by 
+ the non-haloscope experiments. 
+
+\end{abstract}
+
+
+\maketitle
+
+Various astrophysical and cosmological observations indicate that dark matter 
+(DM) exists and makes up 26.4\% of the total energy density of the 
+universe~\cite{DMI,DMII,DMIII,DMIV,PDG}. One of the viable dark matter 
+candidates is the axion, which arises from the spontaneous breaking of a new 
+global U(1)$_\mathrm{PQ}$ symmetry~\cite{strongCPI} introduced by Peccei and 
+Quinn to solve the strong CP problem~\cite{strongCPI,strongCPII,strongCPIII}. 
+Axions are abundantly produced during the QCD phase transition in the early 
+universe and may constitute the DM~\cite{ADDONI,ADDONII,ADDONIII,ADDONIV}. 
+In the post-inflationary PQ symmetry breaking scenario, current calculations 
+suggest a mass range of ${\cal O}(1–100)\,\mu\text{e\hspace{-.08em}V}$ for 
+axions so that the cosmic axion density does not exceed the 
+observed cold DM density~\cite{QCDCalI,QCDCalII,QCDCalIII,QCDCalIV,QCDCalV,QCDCalVI,QCDCalVII,QCDCalVIII,QCDCalIX,QCDCalX,QCDCalXI,QCDCalXII,QCDCalXIII}. 
+
+
+Axions could be detected and studied via their two-photon interaction, of 
+which the strength is described by the coupling constant $g_{a\gamma\gamma}$. 
+The detectors with the best sensitivities to axion DMs with a mass of 
+$m_a\approx \,\mu\text{e\hspace{-.08em}V}$, as first proposed by 
+Sikivie~\cite{SikivieI,SikivieII}, are haloscopes consisting of a microwave 
+(MW) cavity immersed in a strong static magnetic field and operated at a 
+cryogenic temperature. In the presence of an external magnetic field, the 
+ambient oscillating axion field drives the cavity and they resonate when the 
+frequencies of the electromagnetic modes in the cavity match the MW frequency 
+$f$, where $f$ is set by the total energy of the axion: 
+$hf=E_a=m_a c^2 + \frac{1}{2}m_a v^2$. The axion signal power is further 
+delivered to the readout probe followed by a low-noise linear amplifier. 
+
+
+Several haloscope experiments have actively carried out axion searches. 
+The most significant efforts are from the Axion Dark Matter eXperiment (ADMX),
+ placing tight constraints on $g_{a\gamma\gamma}$ 
+within the mass range of 
+1.9--4.2$\,\mu\text{e\hspace{-.08em}V}$~\cite{ADMXI,ADMXII,ADMXIII,ADMXIV,ADMXV,ADMXVI,ADMXVII}. 
+Others include the Haloscope at Yale Sensitive to Axion Cold dark matter 
+(HAYSTAC)~\cite{HAYSTACIII,HAYSTACIV,HAYSTACI}, the Center 
+for Axion and Precision Physics Research 
+(CAPP)~\cite{CAPPII,CAPPIII,CAPPI,CAPPIV}, 
+and the QUest for AXions-$a\gamma$ (QUAX-$a\gamma$)~\cite{QUAX}. 
+This Letter presents the first results of a search for axions in the mass 
+range of 19.4687--19.8436$\,\mu\text{e\hspace{-.08em}V}$, from the Taiwan 
+Axion Search Experiment with Haloscope (TASEH). 
+
+
+The detector of TASEH is located at the Department of Physics, National 
+Central University, Taiwan and housed within a cryogen-free dilution 
+refrigerator (DR) from BlueFors. Figure~\ref{fig:TASEH} shows a simplified 
+diagram of the TASEH apparatus while Fig.~\ref{fig:TASEHPhoto} shows 
+the schematic diagram of the DR system and a photo of the experimental 
+setup. An 8-Tesla superconducting solenoid with a 
+bore diameter of 76~mm and a length of 240 mm is integrated with the DR.  
+The DR has multiple flanges at different temperatures for the required 
+cooling: 50~K, 4~K, still, and mixing flanges [Fig.~\ref{fig:TASEHPhoto} (a)], 
+among which the mixing flange could reach the lowest temperature at $\simeq20$~mK. 
+During the data taking, 
+the MW cavity with two coupling probes sits in the center of the magnet bore 
+and is connected via holders to the mixing flange [Fig.~\ref{fig:TASEHPhoto} (b)]. 
+The $0.234$-L cylindrical 
+cavity, made of oxygen-free high-conductivity (OFHC) copper, has an inner 
+radius of 2.5~cm and a height of 12~cm and is split into two halves along the 
+axial direction to reduce the loss from the seam~\cite{CAPPCavity}. 
+The resonant frequency can be tuned via the rotation of an off-axis OFHC 
+copper tuning rod. The axion-photon conversion signal from the readout probe 
+is directed to an impedance-matched amplification chain (thick lines in 
+Fig.~\ref{fig:TASEH}). The first-stage amplifier is a low noise 
+high-electron-mobility-transistor (HEMT) amplifier mounted on the 4~K flange. 
+A circulator, anchored at the mixing flange, prevents thermal radiation from 
+the HEMT amplifier back streaming to the cold cavity and then being reflected. 
+ The signal is further amplified at room temperature via a three-stage 
+post-amplifier, and down-converted to in-phase (I) and quadrature (Q) 
+components and digitized by an analog-to-digital converter with a sampling 
+rate of 2~MHz. Two heavily attenuated input lines support scattering parameter 
+measurements of the cavity and transmit test signals. More details of the 
+TASEH detector can be found in Ref.~\cite{TASEHInstrumentation}. 
+
+
+
+\begin{figure} 
+  \centering
+  \includegraphics[width=8.6cm]{Figure1.png}
+  \caption{The simplified diagram of the TASEH apparatus.}
+  \label{fig:TASEH}
+\end{figure}
+
+\begin{figure} 
+  \centering
+  \includegraphics[width=8.6cm]{Figure2.png}
+  \caption{(a) The schematic diagram of the TASEH cryogen-free DR system. 
+   (b) An overview photo of the TASEH experimental setup.}
+  \label{fig:TASEHPhoto}
+\end{figure}
+
+
+
+The signal power extracted from a MW cavity on resonance is given 
+by~\cite{AxionFormula,HAYSTACIII}:
+\begin{equation}
+P_s = \left(g_{a\gamma\gamma}^2\frac{\hbar^3c^3\rho_a}{m_a^2}\right)\times
+\left(\omega_c\frac{1}{\mu_0}B_0^2VCQ_L\frac{\beta}{1+\beta}\right).
+\label{eq:ps}
+\end{equation}
+The first set of parentheses contains $g_{a\gamma\gamma}$, $m_a$, physical 
+constants, and the local dark-matter density 
+$\rho_a=0.45\,\text{Ge\hspace{-.08em}V}/\mathrm{cm}^3$~\cite{[{}][{. 
+Both $0.45\,\text{Ge\hspace{-.08em}V}/\mathrm{cm}^3$ 
+(used by ADMX, HAYSTAC, CAPP, and QUAX-$a\gamma$) and 
+$0.3\,\text{Ge\hspace{-.08em}V}/\mathrm{cm}^3$ (more commonly cited by the 
+other direct DM search experiments) are consistent 
+with the recent measurements.}]Read:2014qva,PDG}. 
+For the QCD axions, $g_{a\gamma\gamma}$ is related to the axion mass $m_a$: 
+\begin{equation}
+ g_{a\gamma\gamma} = \left(\frac{g_{\gamma}\alpha}{\pi \Lambda^2}\right)m_a, 
+\label{eq:grelation}
+\end{equation}
+where $g_{\gamma}$ is a dimensionless model-dependent parameter,    
+with numerical values -0.97 and 0.36 
+in the Kim-Shifman-Vainshtein-Zakharov (KSVZ)~\cite{KSVZI,KSVZII} and 
+the Dine-Fischler-Srednicki-Zhitnitsky (DFSZ)~\cite{DFSZI,DFSZII} benchmark 
+models, respectively. The symbol $\alpha$ is the fine-structure constant and  
+$\Lambda=78~\,\text{Me\hspace{-.08em}V}$ is a scale parameter that can 
+be derived from the mass and the decay constant of the pion and the ratio of 
+the up to down quark masses. 
+%
+The second set of parentheses contains parameters related to the experimental 
+setup: the angular resonant frequency of the cavity $\omega_c$, the vacuum 
+permeability $\mu_0$, the nominal strength of the external magnetic field 
+$B_0$, the effective volume of the cavity $V$, and the loaded quality factor 
+of the cavity \(Q_L=Q_0/(1+\beta)\), where $Q_0$ is the unloaded, intrinsic 
+quality factor and $\beta$ is the coupling coefficient which 
+determines the amount of coupling of the signal to the receiver. The form 
+factor $C$ is the normalized overlap of the electric field $\vec{\bm{E}}$, 
+for a particular cavity resonant mode, with the external magnetic field 
+$\vec{\bm{B}}$:
+\begin{equation}
+  C = \frac{\left[\int\left( \vec{\bm{B}}\cdot\vec{\bm{E}}\right) d^3\bm{x}\right]^2}{B_0^2V\int E^2 d^3\bm{x}}.
+\label{eq:formfactor} 
+\end{equation} 
+The magnetic field $\vec{\bm{B}}$ in TASEH points mostly along the axial
+direction of the cavity. For cylindrical cavities, the largest form factor is 
+from the TM$_{010}$ mode. The expected signal power derived from the 
+experimental parameters of TASEH is $P_s\simeq 1.4\times10^{-24}$~W for a 
+KSVZ axion with a mass of 19.6$\,\mu\text{e\hspace{-.08em}V}$. 
+
+In the haloscope experiments, the figure of merit that determines the design 
+of the experimental setup is the signal-to-noise ratio
+(SNR), i.e. the ratio of the signal power $P_s$ to the fluctuation in 
+the averaged noise power spectrum $\sigma_n$~\cite{Dicke}, given by:  
+\begin{equation}
+   \text{SNR}  =  \frac{P_s}{\sigma_n}=  \frac{P_s}{k_B T_\text{sys}}\sqrt{\frac{t}{\Delta f}},
+ \label{eq:SNR}
+\end{equation}  
+where $T_\text{sys}$ is the system noise temperature, an effective temperature
+ associated with the total noise of the system, $t$ is the data integration 
+time, and $\Delta f$ is the resolution bandwidth. Here, one assumes that all 
+the axion signal power falls within $\Delta f$.  
+
+
+The system noise temperature $T_\text{sys}$ has three major components:
+\begin{equation}
+ T_\text{sys} = \Tilde{T}_\text{mx} + \left(\Tilde{T}_\text{c}-\Tilde{T}_\text{mx}\right)L(\omega) + T_\text{a},
+\label{eq:pn}
+\end{equation}
+where $\omega$ is the angular frequency.
+The last term $T_\text{a}$ is the effective temperature of the
+noise added by the receiver (mainly from the first-stage amplifier).
+The sum of the first two terms is equivalent to the sum of the reflection of 
+the incoming noise from the attenuator anchored to the mixing flange 
+(Fig.~\ref{fig:TASEH}) and the transmission of the noise from the cavity 
+body itself. The symbol 
+$\Tilde{T}_i=\left(\frac{1}{e^{\left.\hbar\omega\middle/k_BT_i\right.}-1} + \frac{1}{2}\right)\left. \hbar\omega\middle/k_B\right.$ refers to
+the effective temperature due to the blackbody radiation at a physical 
+temperature $T_i$ and the vacuum fluctuation. The difference of the effective 
+temperatures $\Tilde{T}_\text{c}-\Tilde{T}_\text{mx}$ is modulated by a 
+Lorentzian function $L(\omega)$. If the physical temperatures of the cavity 
+$T_\text{c}$ and of the mixing flange $T_\text{mx}$ are identical, the thermal
+ noise spectrum from the cavity is flat. The derivation of the first two terms
+ in Eq.~\eqref{eq:pn} can be found in Ref.~\cite{TASEHAnalysis}. 
+
+
+The calibration for the amplification chain is performed by connecting the HEMT
+ to a blackbody radiation source (Fig.~\ref{fig:TASEH}) instead of the cavity 
+via a cryogenic switch. Various values of input currents are sent to a nearby 
+resistor heater to change its temperature $T_{\text b}$ monitored by a 
+thermometer. The output power is fitted to a first-order polynomial, as a 
+function of the source temperature, to extract the overall gain and added 
+noise $T_\text{a}$. 
+
+
+The data for the analysis presented here were collected by TASEH from October 
+13, 2021 to November 15, 2021, and are termed as the CD102 data, where CD 
+stands for ``cool down''. The CD102 data cover the frequency range of 
+4.70750--4.79815~GHz. In this Letter, most of the frequencies in unit of GHz 
+are quoted with five decimal places as the absolute accuracy of frequency is 
+$\approx 10$~kHz. It shall be noted that the frequency resolution is 1~kHz.  
+During the CD102 data run, the temperature of the cavity stayed at 
+$T_\text{c}\simeq155$~mK, higher with respect to the mixing flange 
+$T_\text{mx}\simeq27$~mK; it is believed that the cavity had an unexpected 
+thermal contact with the radiation shield in the DR. As a result, 
+$\Tilde{T}_\text{c}$ and $\Tilde{T}_\text{mx}$ are 0.18~K and 0.11~K, 
+respectively. The form factor $C$ for the TM$_{010}$ mode varies from 0.60 to 
+0.61 over the operational frequency range. The intrinsic quality factor $Q_0$ 
+at the cryogenic temperature is $\simeq 60700$. The insertion depth of the 
+readout probe is set for $\beta\simeq2$ since this value, for a given amount 
+of time and a fixed value of SNR, maximizes the frequency coverage. 
+In this case, the cavity line width, $\left.\omega_c\middle/2\pi Q_L\right.$, 
+is about 240~kHz. 
+
+The calibration was carried out before, during, and after the data taking,
+which showed that the performance of the system was stable over time. 
+The added noise $T_\text{a}$ obtained from the calibration is 
+about $1.9-2.2$~K, with a frequency dependence. In CD102, 
+there were 837 resonant-frequency steps in total, with a frequency difference 
+of $\Delta f_\text{s}=95-115$~kHz between the steps. The value of 
+$\Delta f_\text{s}$ was kept within 10\% of 105~kHz ($\lesssim$ half of the 
+cavity line width) rather than a fixed value, such that the rotation angle of 
+the tuning rod did not need to be fine-tuned and the operation time could be 
+minimized. A 10\% variation of $\Delta f_\text{s}$ is found to have no impact 
+on the $g_{a\gamma\gamma}$ limits. Each resonant-frequency step is denoted as 
+a ``scan'' and the data integration time was about 32-42 minutes. 
+The variation of the integration time was introduced to compensate 
+the frequency dependence of the added noise. 
+
+The analysis of the CD102 data follows the procedure similar to that 
+developed by the HAYSTAC experiment~\cite{HAYSTACII} and the details are 
+described in Ref.~\cite{TASEHAnalysis}. The fast Fourier transform 
+algorithm is performed on the IQ time series data to obtain the 
+frequency-domain power spectrum. The Savitzky-Golay (SG) 
+filter~\cite{SGFilter} is applied to model the Lorentzian structure of 
+the background caused by the temperature difference between the cavity and 
+the mixing flange [Eq.~\eqref{eq:pn}] and to obtain the 
+average noise power. 
+Deviations from the average noise power are compared with the 
+uncertainty on the averaged power spectrum, which defines the 
+observed SNR. All the spectra from different 
+frequency scans, particularly for the frequency bins that appear in 
+multiple spectra, are combined with a weighting algorithm. 
+In order to maximize the SNR, a running window of 
+five consecutive bins in the combined spectrum is applied and the five bins 
+within each window are merged to construct a final spectrum. 
+The five frequency bins correspond to the 5-kHz axion signal line width,  
+assuming a standard Maxwellian axion line shape with a velocity 
+variance $\left<v^2\right>=$(270~km/s)$^2$~\cite{HAYSTACII}. 
+This line shape is also used when defining the maximum likelihood 
+weights for merging. 
+
+
+After the merging, 22 candidates with an SNR greater than 3.355 were found and 
+a rescan was performed to check if they were real signals  
+or statistical fluctuations.        
+Among them, 20 candidates were from the fluctuations because they were gone 
+after a few rescans. 
+The remaining two candidates, in the frequency ranges of 
+4.71017 -- 4.71019~GHz and 4.74730 -- 4.74738~GHz, are not 
+considered axion signal candidates for the following reasons. 
+The signal in the second frequency range was detected via a portable antenna 
+outside the DR and found to come from the instrument control computer in the 
+laboratory, while the signal in the first frequency range was not detected 
+outside the DR but still present after turning off the external magnetic 
+field. No limits are placed for the above two frequency ranges.  
+
+
+Since no candidates were found after the rescan, the upper limits at 95\% 
+confidence level (C.L.) on $\left|g_{a\gamma\gamma}\right|$ are derived by 
+setting the maximum SNR equal to five, with the assumption that axions make up 
+100\% of the local dark matter density.  
+Figure~\ref{fig:gaggall} shows the $\left|g_{a\gamma\gamma}\right|$ limits of 
+TASEH and the ratios relative to the KSVZ benchmark value, together with those 
+from the previous searches. The limits on $\left|g_{a\gamma\gamma}\right|$ 
+range from $5.3\times 10^{-14}\,\text{Ge\hspace{-.08em}V}^{-1}$ to 
+$8.9\times 10^{-14}\,\text{Ge\hspace{-.08em}V}^{-1}$, with an average 
+value of $8.2\times 10^{-14}\,\text{Ge\hspace{-.08em}V}^{-1}$; the lowest 
+value comes from the frequency bins with additional eight times more data from 
+the rescans, while the highest value comes from the frequency bins near the 
+boundaries of the spectrum. Overall the total relative systematic uncertainty 
+is $\approx 4.6\%$, coming from the uncertainties on the loaded quality factor 
+$Q_L$, the coupling coefficient $\beta$, the added noise temperature 
+$T_\text{a}$, the effect of the misalignment between the true axion frequency 
+and the lower boundaries of the frequency bins, and the variation of the 
+SG-filter parameters. 
+
+
+The analysis that merges bins without assuming a signal line shape results in 
+$\approx5.5$\% larger values on the $\left|g_{a\gamma\gamma}\right|$ limits. 
+If a Gaussian signal line shape with an FWHM of 2.5~kHz is assumed instead, 
+the limits will be $\approx3.8$\% smaller than the central results. If the 
+$\left|g_{a\gamma\gamma}\right|$ limits are derived from the observed SNR as 
+described in the ADMX paper~\cite{ADMXVIII}, rather than using the 5$\sigma$ 
+target SNR, the average limit on $\left|g_{a\gamma\gamma}\right|$ will 
+be $\approx 4.9\times 10^{-14}\,\text{Ge\hspace{-.08em}V}^{-1}$. 
+
+
+
+
+\begin{figure*} 
+  \centering
+  \includegraphics[width=12.9cm]{Figure3.png}
+  \caption{The 95\% C.L. limits on $\left|g_{a\gamma\gamma}\right|$ and the 
+ ratio of the average limit with respect to the KSVZ benchmark value from the 
+ CD102 data (red band in the inset). The results from the previous searches 
+ performed by the ADMX, CAPP, and HAYSTAC Collaborations are also shown 
+ (inset). The blue error band indicates the systematic uncertainties. The gray
+ band in the inset shows the allowed region of 
+ $\left|g_{a\gamma\gamma}\right|$ vs. $m_a$ from various QCD axion models, 
+ while the blue and red dashed lines are the values predicted by the KSVZ and 
+ DFSZ benchmark models, respectively.
+ }
+
+  \label{fig:gaggall}
+\end{figure*}
+
+
+
+%%%% faxion
+After the collection of the CD102 data, synthetic axion signals were injected 
+into the cavity via the transmission input line (Fig.~\ref{fig:TASEH}) and 
+read out via the same amplification chain. The procedure to generate axion-like
+ signals is summarized in Ref.~\cite{TASEHInstrumentation} and the analysis of
+ the synthetic axion data is described in Ref.~\cite{TASEHAnalysis}. 
+The analysis results demonstrate the capability of the experimental setup and 
+the analysis strategy to discover an axion signal with 
+$\left|g_{a\gamma\gamma}\right|\approx {\cal O}\left(10\left|g_{a\gamma\gamma}^\text{KSVZ}\right|\right)$.
+
+
+%% conclusion 
+In summary, a search for axions in the mass range 
+$19.4687 < m_a < 19.8436 \,\mu\text{e\hspace{-.08em}V}$ was performed by the 
+TASEH Collaboration. Apart from the non-axion signals, no candidates with a 
+significance more than 3.355 were found. The experiment excludes models with 
+the axion-two-photon coupling 
+$\left|g_{a\gamma\gamma}\right|\gtrsim 8.2\times 10^{-14}\,\text{Ge\hspace{-.08em}V}^{-1}$ 
+at 95\% C.L., a factor of eleven above the benchmark KSVZ model. The sensitivity on 
+$\left|g_{a\gamma\gamma}\right|$ reached by TASEH is three orders of magnitude 
+better than the limits obtained by the helioscope experiments.  
+It is also the first time that a haloscope-type experiment places 
+constraints in the mass region of 
+$19.4687 < m_a < 19.7639 \,\mu\text{e\hspace{-.08em}V}$. 
+The target of TASEH is to search for axions 
+in the mass range of 16.5--20.7$\,\mu\text{e\hspace{-.08em}V}$ 
+corresponding to a frequency range of 4--5~GHz. 
+With the upcoming upgrades of the experimental setup, including: the use of a
+quantum-limited Josephson parametric amplifier, a new dilution refrigerator that 
+has a stronger magnetic field and a larger bore size, and a new cavity with a 
+significantly larger effective volume, and several years of data 
+taking, TASEH is expected to probe the QCD axion band in the target mass range.
+
+\begin{acknowledgments}
+We thank Chao-Lin Kuo for his help to initiate this project as well as
+discussions on the microwave cavity design, Gray Rybka and Nicole Crisosto
+for their introduction of the ADMX experimental
+setup and analysis, Anson Hook for the discussions and the review of the
+axion theory, and Jiunn-Wei Chen, Cheng-Wei Chiang, Cheng-Pang Liu, and
+Asuka Ito for the discussions of future improvements in axion searches. 
+We acknowledge support of microwave test and measurement equipment from the 
+National Chung-Shan Institute of Science and Technology. 
+  The work of the TASEH Collaboration was funded by
+the Ministry of Science and Technology (MoST) of Taiwan with grant numbers
+MoST-109-2123-M-001-002, MoST-110-2123-M-001-006, MoST-110-2112-M-213-018,
+MoST-110-2628-M-008-003-MY3,
+and MoST-109-2112-M-008-013-MY3, and by the Institute of Physics, Academia
+Sinica.
+\end{acknowledgments}
+
 %apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
 %Control: key (0)
 %Control: author (72) initials jnrlst
@@ -988,3 +1442,9 @@
   {pages} {032002} (\bibinfo {year} {2021}{\natexlab{b}})}\BibitemShut
   {NoStop}%
 \end{thebibliography}%
+
+
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
