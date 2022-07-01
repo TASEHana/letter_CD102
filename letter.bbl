@@ -7,7 +7,7 @@
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
 \providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
-\begin{thebibliography}{55}%
+\begin{thebibliography}{56}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -740,6 +740,76 @@
   {https://doi.org/10.1103/PhysRevD.103.102004} {\bibfield  {journal} {\bibinfo
    {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
   {pages} {102004} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bartram}\ \emph
+  {et~al.}(2021{\natexlab{b}})\citenamefont {Bartram}, \citenamefont {Braine},
+  \citenamefont {Cervantes}, \citenamefont {Crisosto}, \citenamefont {Du},
+  \citenamefont {Leum}, \citenamefont {Mohapatra}, \citenamefont {Nitta},
+  \citenamefont {Rosenberg}, \citenamefont {Rybka}, \citenamefont {Yang},
+  \citenamefont {Clarke}, \citenamefont {Siddiqi}, \citenamefont {Agrawal},
+  \citenamefont {Dixit}, \citenamefont {Awida}, \citenamefont {Chou},
+  \citenamefont {Hollister}, \citenamefont {Knirck}, \citenamefont
+  {Sonnenschein}, \citenamefont {Wester}, \citenamefont {Gleason},
+  \citenamefont {Hipp}, \citenamefont {Jois}, \citenamefont {Sikivie},
+  \citenamefont {Sullivan}, \citenamefont {Tanner}, \citenamefont {Hoof},
+  \citenamefont {Lentz}, \citenamefont {Khatiwada}, \citenamefont {Carosi},
+  \citenamefont {Cisneros}, \citenamefont {Robertson}, \citenamefont
+  {Woollett}, \citenamefont {Duffy}, \citenamefont {Boutan}, \citenamefont
+  {Jones}, \citenamefont {LaRoque}, \citenamefont {Oblath}, \citenamefont
+  {Taubman}, \citenamefont {Daw}, \citenamefont {Perry}, \citenamefont
+  {Buckley}, \citenamefont {Gaikwad}, \citenamefont {Hoffman}, \citenamefont
+  {Murch}, \citenamefont {Goryachev}, \citenamefont {McAllister}, \citenamefont
+  {Quiskamp}, \citenamefont {Thomson},\ and\ \citenamefont
+  {Tobar}}]{ADMXUnPub}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Bartram}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Braine}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Cervantes}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {Crisosto}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Du}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Leum}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Mohapatra}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Nitta}},
+  \bibinfo {author} {\bibfnamefont {L.~J.}\ \bibnamefont {Rosenberg}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Rybka}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Yang}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Clarke}}, \bibinfo {author} {\bibfnamefont
+  {I.}~\bibnamefont {Siddiqi}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Agrawal}}, \bibinfo {author} {\bibfnamefont {A.~V.}\
+  \bibnamefont {Dixit}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Awida}}, \bibinfo {author} {\bibfnamefont {A.~S.}\ \bibnamefont {Chou}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hollister}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Knirck}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Sonnenschein}}, \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Wester}}, \bibinfo {author} {\bibfnamefont
+  {J.~R.}\ \bibnamefont {Gleason}}, \bibinfo {author} {\bibfnamefont {A.~T.}\
+  \bibnamefont {Hipp}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Jois}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Sikivie}},
+  \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Sullivan}}, \bibinfo
+  {author} {\bibfnamefont {D.~B.}\ \bibnamefont {Tanner}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Hoof}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Lentz}}, \bibinfo {author} {\bibfnamefont
+  {R.}~\bibnamefont {Khatiwada}}, \bibinfo {author} {\bibfnamefont
+  {G.}~\bibnamefont {Carosi}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Cisneros}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Robertson}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Woollett}}, \bibinfo {author} {\bibfnamefont {L.~D.}\
+  \bibnamefont {Duffy}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Boutan}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Jones}},
+  \bibinfo {author} {\bibfnamefont {B.~H.}\ \bibnamefont {LaRoque}}, \bibinfo
+  {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Oblath}}, \bibinfo {author}
+  {\bibfnamefont {M.~S.}\ \bibnamefont {Taubman}}, \bibinfo {author}
+  {\bibfnamefont {E.~J.}\ \bibnamefont {Daw}}, \bibinfo {author} {\bibfnamefont
+  {M.~G.}\ \bibnamefont {Perry}}, \bibinfo {author} {\bibfnamefont {J.~H.}\
+  \bibnamefont {Buckley}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Gaikwad}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Hoffman}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Murch}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Goryachev}}, \bibinfo {author}
+  {\bibfnamefont {B.~T.}\ \bibnamefont {McAllister}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Quiskamp}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Thomson}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.~E.}\ \bibnamefont {Tobar}} (\bibinfo {collaboration} {ADMX
+  Collaboration}),\ }\href {https://arxiv.org/abs/2110.10262} {\  (\bibinfo
+  {year} {2021}{\natexlab{b}})},\ \Eprint {https://arxiv.org/abs/2110.10262}
+  {arXiv:2110.10262 [hep-ex]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Choi}\ \emph {et~al.}(2021)\citenamefont {Choi},
   \citenamefont {Ahn}, \citenamefont {Ko}, \citenamefont {Lee},\ and\
   \citenamefont {Semertzidis}}]{CAPPCavity}%
@@ -922,7 +992,7 @@
   {\bibinfo  {journal} {Anal. Chem.}\ }\textbf {\bibinfo {volume} {36}},\
   \bibinfo {pages} {1627} (\bibinfo {year} {1964})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Bartram}\ \emph
-  {et~al.}(2021{\natexlab{b}})\citenamefont {Bartram}, \citenamefont {Braine},
+  {et~al.}(2021{\natexlab{c}})\citenamefont {Bartram}, \citenamefont {Braine},
   \citenamefont {Cervantes}, \citenamefont {Crisosto}, \citenamefont {Du},
   \citenamefont {Leum}, \citenamefont {Rosenberg}, \citenamefont {Rybka},
   \citenamefont {Yang}, \citenamefont {Bowring}, \citenamefont {Chou},
@@ -985,6 +1055,6 @@
   {Murch}} (\bibinfo {collaboration} {ADMX Collaboration}),\ }\href
   {https://doi.org/10.1103/PhysRevD.103.032002} {\bibfield  {journal} {\bibinfo
    {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
-  {pages} {032002} (\bibinfo {year} {2021}{\natexlab{b}})}\BibitemShut
+  {pages} {032002} (\bibinfo {year} {2021}{\natexlab{c}})}\BibitemShut
   {NoStop}%
 \end{thebibliography}%
