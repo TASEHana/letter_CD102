@@ -7,7 +7,7 @@
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
 \providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
-\begin{thebibliography}{56}%
+\begin{thebibliography}{60}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -704,7 +704,7 @@
   {author} {\bibfnamefont {H.}~\bibnamefont {Yoon}}, \bibinfo {author}
   {\bibfnamefont {M.}~\bibnamefont {Ahn}}, \bibinfo {author} {\bibfnamefont
   {H.}~\bibnamefont {Park}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
-  {Min}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Kim}},\ and\
+  {Min}}, \bibinfo {author} {\bibfnamefont {D.~L.}\ \bibnamefont {Kim}},\ and\
   \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Yoo}},\ }\href
   {https://doi.org/10.1103/PhysRevLett.128.241805} {\bibfield  {journal}
   {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {128}},\
@@ -807,8 +807,8 @@
   {\bibfnamefont {A.}~\bibnamefont {Quiskamp}}, \bibinfo {author}
   {\bibfnamefont {C.}~\bibnamefont {Thomson}},\ and\ \bibinfo {author}
   {\bibfnamefont {M.~E.}\ \bibnamefont {Tobar}} (\bibinfo {collaboration} {ADMX
-  Collaboration}),\ }\href {https://arxiv.org/abs/2110.10262} {\  (\bibinfo
-  {year} {2021}{\natexlab{b}})},\ \Eprint {https://arxiv.org/abs/2110.10262}
+  Collaboration}),\ }\href@noop {} {\  (\bibinfo {year}
+  {2021}{\natexlab{b}})},\ \Eprint {https://arxiv.org/abs/2110.10262}
   {arXiv:2110.10262 [hep-ex]} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Choi}\ \emph {et~al.}(2021)\citenamefont {Choi},
   \citenamefont {Ahn}, \citenamefont {Ko}, \citenamefont {Lee},\ and\
@@ -1057,4 +1057,50 @@
    {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
   {pages} {032002} (\bibinfo {year} {2021}{\natexlab{c}})}\BibitemShut
   {NoStop}%
+\bibitem [{\citenamefont {Andriamonje}\ \emph {et~al.}(2007)\citenamefont
+  {Andriamonje} \emph {et~al.}}]{CASTI}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Andriamonje}} \emph {et~al.} (\bibinfo {collaboration} {CAST}),\ }\href
+  {https://doi.org/10.1088/1475-7516/2007/04/010} {\bibfield  {journal}
+  {\bibinfo  {journal} {J. Cosmol. Astropart. Phys.}\ }\textbf {\bibinfo
+  {volume} {04}},\ \bibinfo {pages} {010}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Anastassopoulos}\ \emph {et~al.}(2017)\citenamefont
+  {Anastassopoulos} \emph {et~al.}}]{CASTII}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Anastassopoulos}} \emph {et~al.} (\bibinfo {collaboration} {CAST}),\ }\href
+  {https://doi.org/10.1038/nphys4109} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Phys.}\ }\textbf {\bibinfo {volume} {13}},\ \bibinfo
+  {pages} {584} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {DePanfilis}\ \emph {et~al.}(1987)\citenamefont
+  {DePanfilis}, \citenamefont {Melissinos}, \citenamefont {Moskowitz},
+  \citenamefont {Rogers}, \citenamefont {Semertzidis}, \citenamefont {Wuensch},
+  \citenamefont {Halama}, \citenamefont {Prodell}, \citenamefont {Fowler},\
+  and\ \citenamefont {Nezrick}}]{RBF}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {DePanfilis}}, \bibinfo {author} {\bibfnamefont {A.~C.}\ \bibnamefont
+  {Melissinos}}, \bibinfo {author} {\bibfnamefont {B.~E.}\ \bibnamefont
+  {Moskowitz}}, \bibinfo {author} {\bibfnamefont {J.~T.}\ \bibnamefont
+  {Rogers}}, \bibinfo {author} {\bibfnamefont {Y.~K.}\ \bibnamefont
+  {Semertzidis}}, \bibinfo {author} {\bibfnamefont {W.~U.}\ \bibnamefont
+  {Wuensch}}, \bibinfo {author} {\bibfnamefont {H.~J.}\ \bibnamefont {Halama}},
+  \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont {Prodell}}, \bibinfo
+  {author} {\bibfnamefont {W.~B.}\ \bibnamefont {Fowler}},\ and\ \bibinfo
+  {author} {\bibfnamefont {F.~A.}\ \bibnamefont {Nezrick}},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.59.839} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {59}},\ \bibinfo
+  {pages} {839} (\bibinfo {year} {1987})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hagmann}\ \emph {et~al.}(1990)\citenamefont
+  {Hagmann}, \citenamefont {Sikivie}, \citenamefont {Sullivan},\ and\
+  \citenamefont {Tanner}}]{UF}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Hagmann}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Sikivie}},
+  \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Sullivan}},\ and\
+  \bibinfo {author} {\bibfnamefont {D.~B.}\ \bibnamefont {Tanner}},\ }\href
+  {https://doi.org/10.1103/PhysRevD.42.1297} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. D}\ }\textbf {\bibinfo {volume} {42}},\ \bibinfo
+  {pages} {1297} (\bibinfo {year} {1990})}\BibitemShut {NoStop}%
 \end{thebibliography}%
