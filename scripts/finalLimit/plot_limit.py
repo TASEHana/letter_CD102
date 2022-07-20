@@ -13,7 +13,7 @@ hep.style.use(hep.style.ROOT)
 
 INPUT_EXPERIMENT_FLODER = "others_experiment"
 INPUT_limit_PATH        = "gayy_unc_updateFF_06July.txt"  #"gayy_unc_updateNoise_C.txt"
-OUTPUT_FILE_NAME        = "limit.png"
+OUTPUT_FILE_NAME        = "Figure3.png"
 
 SHOW_OTHER_EXPERIMENT   = 1 #  1 : show others experiment data  0 : don't show
 PLOT_SQUARE             = 1 #  1 : plot TASEH limit with suare  0 : don't do that
